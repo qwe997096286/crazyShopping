@@ -62,7 +62,7 @@
         <view class='index-body-icon'>
           <view class='index-body-icon-bg'>
             <view class='fenlei'>
-              <view class='fangkuai1' bindtap='vote' id="蔬果农场" wx:if='{{isshow}}'>
+              <view class='fangkuai1' bindtap='vote' id="新品" wx:if='{{isshow}}'>
                 <view class='secondfk1'>
                   <view class='f-cont'>
                     <image src="/images/new.png"></image>

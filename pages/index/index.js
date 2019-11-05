@@ -434,6 +434,7 @@ dianjia:function(event){
             ys.push(res.data.itemShop[i]);
           }
 
+          // console.log();
 
           //  returnArr[i].distance=returnArr[i].distance.toFixed(1);
           switch (returnArr[i].stype) {
@@ -614,9 +615,9 @@ dianjia:function(event){
       wx.navigateTo({
         url: '../Mall/Mall?id=水果超市'
       })
-    } else if (key == "蔬果农场") {
+    } else if (key == "新品") {
       wx.navigateTo({
-        url: '../Mall/Mall?id=蔬果农场'
+        url: '../Mall/Mall?id=新品'
       })
     }
     else if (key == "畜牧农场") {
@@ -867,7 +868,7 @@ dianjia:function(event){
           latitude1: latitude,
           longitude1: longitude,
         })
-        // vm.funjin();
+        vm.funjin();
         var speed = res.speed
         var accuracy = res.accuracy;
         vm.getLocal(latitude, longitude)
