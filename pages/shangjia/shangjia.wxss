@@ -283,7 +283,7 @@ letter-spacing: 2px;
     height: 100%; 
   font-size: 13px;
   font-weight: 600;
-  color: red;
+  color: rgba(255, 0, 0, 0.349);
 }
 .xiangqing{
 
