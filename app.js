@@ -3,7 +3,34 @@ var url = require('config.js')
 App({
   onLaunch: function () {
     this.login()
+       this.test();
   },
+  //隐藏底部导航栏
+  test: function () {
+    var that = this;
+    wx.request({
+      url: 'https://www.sxscott.com/agriculture/agro/getHide',
+      method: "post",
+      data: {},
+      header: {
+        'content-type': 'application/json'
+      },
+      success(res) {
+        console.log(res.data)
+        if (res.data == 1) {
+          wx.hideTabBar({
+
+          })
+         
+        } else {
+          wx.showTabBar({
+
+          })
+        }
+      }
+    })
+  },
+  
   login() {
     var that = this;
     // 登录
@@ -23,6 +50,8 @@ App({
                   var platUserInfoMap = {}
                   platUserInfoMap["encryptedData"] = userResult.encryptedData;
                   platUserInfoMap["iv"] = userResult.iv;
+                  wx.setStorageSync("pmap",platUserInfoMap)
+                  console.log(platUserInfoMap)
                   wx.request({
                     url: url.host+'/agro/login',
                     method: 'POST',
@@ -35,6 +64,7 @@ App({
                     },
                     success(res) {
                       if (res.data.code == 200) {
+                        console.log(res.data)
                         wx.setStorageSync("userinfo", res.data)
                         wx.setStorageSync("accessToken", res.accessToken)
                         wx.setStorageSync("isBinding", res.data.isBinding)

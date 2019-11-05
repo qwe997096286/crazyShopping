@@ -1,7 +1,7 @@
 <view id='address'>
   <view class='addressList' wx:for="{{addressList}}"  wx:key="key">
     <view class='address-pos'>
-      <view class='address-pos-isDefault'></view>
+      <!-- <view class='address-pos-isDefault'></view> -->
       <view class='address-pos-address'>{{item.address}}</view>
     </view>
     <view class='address-bottom'>

@@ -62,11 +62,11 @@ console.log(_sets.data)
       }
     },
     fail() {
-      wx.showModal({
-        title: '提示',
-        content: '服务器连接失败',
-        showCancel: false
-      });
+      // wx.showModal({
+      //   title: '提示',
+      //   content: '服务器连接失败',
+      //   showCancel: false
+      // });
     },
     complete() {
       ccallback()

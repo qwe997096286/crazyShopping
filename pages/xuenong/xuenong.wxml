@@ -1,0 +1,21 @@
+<!--pages/xuenong/xuenong.wxml-->
+<view class='xuenong-page'>
+  <view class='search' bindtap='toSearch'>
+    <view class='search-main'>
+      <view class='search-icon iconfont icon-sousuo'></view>
+      <text class='search-main-text'>请输入商家或商品名称</text>
+    </view>
+  </view>
+  <view class='content'>
+    <view class='con1'>
+      <view class='trip'  wx:for="{{xuenonglist}}" id='{{item.id}}' bindtap='detail'>
+        <view class='img'><image mode='aspectFit' src='{{item.titilePic}}'></image></view>
+        <view class='biaoti'><text class='title'>{{item.title}}</text></view>
+        <view class='money'><text class='fuhao'>￥</text><text>{{item.cost}}</text></view>
+        <view class='kaibanren'><text class='title'>来自{{space}}{{space}}{{item.name}}</text><view class='xinyoug'>信用极好</view></view>
+      </view>
+   
+
+    </view>
+  </view>
+</view>

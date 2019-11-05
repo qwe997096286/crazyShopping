@@ -7,7 +7,14 @@
   url('iconfont.ttf?t=1552811674367') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
   url('iconfont.svg?t=1552811674367#iconfont') format('svg'); /* iOS 4.1- */
 }
-
+.zhanshi{
+ width: 100%;
+ height: 100%;
+}
+.zhanshi image{
+  width: 100%;
+  height: 100%;
+}
 .iconfont {
   font-family: "iconfont" !important;
   font-size: 16px;
@@ -275,18 +282,31 @@ border-radius: 4px;
 .kuang{
   margin-left: 15rpx;
   height: 80%;
+  width: 100%;
 }
 .font-title{
+  width: 100%;
   font-size: 25rpx;
   font-weight: 600;
    margin-top: 15rpx;
+    overflow:hidden; 
+
+text-overflow:ellipsis;
+
+white-space:nowrap; 
 }
+
 .font-neirong{
   font-size: 20rpx;
   margin-top: 15rpx;
   color: rgba(0, 0, 0, 0.5);
      text-align: justify;
      flex-wrap: wrap;
+      overflow:hidden; 
+
+text-overflow:ellipsis;
+
+white-space:nowrap; 
 }
 .zhiding{
   width: 100%;

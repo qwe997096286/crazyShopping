@@ -9,6 +9,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    url:'https://www.sxscott.com/agriculture',
     items: [
       {
         type: 'filter',
@@ -80,10 +81,48 @@ Page({
     youxuanlist: [],
     fujinlist: [],
     ys: [],
-    flag:false
+    flag:false,
+    isshow:false,
+    isshow2:false
     // userinfo: wx.getStorageSync('userinfo')
   },
-  
+  //隐藏底部导航栏
+  test: function () {
+    var that = this;
+    wx.request({
+      url: 'https://www.sxscott.com/agriculture/agro/getHide',
+      method: "post",
+      data: {},
+      header: {
+        'content-type': 'application/json'
+      },
+      success(res) {
+        console.log(res.data)
+        if (res.data == 1) {
+        that.setData({
+          isshow:false,
+          isshow2:true,
+          latitude1: 0,
+          longitude1: 0,
+          
+        })
+          wx.hideTabBar({
+
+          })
+        that.funjin()
+        } else {
+          that.setData({
+            isshow: true,
+            isshow2:false
+          })
+          wx.showTabBar({
+
+          })
+          that.funjin()
+        }
+      }
+    })
+  },
 // 跳转商店
 dianjia:function(event){
   console.log(event.currentTarget.id);
@@ -585,6 +624,11 @@ dianjia:function(event){
         url: '../Mall/Mall?id=畜牧农场'
       })
     }
+    else if (key == "农庄农场") {
+      wx.navigateTo({
+        url: '../Mall/Mall?id=农庄农场'
+      })
+    }
     else if (key == "旅游产业") {
       wx.navigateTo({
         url: '../Mall/Mall?id=旅游产业'
@@ -612,12 +656,20 @@ dianjia:function(event){
     }
 
   },
+  vote2: function () {
+
+      wx.navigateTo({
+        url: '../xuenong/xuenong'
+      })
+    
+
+  },
   sp:function(){
-    wx.showToast({
-      title: '功能施工中，敬请期待！',
-      icon: 'none',
-      duration: 2000
-    })
+    // wx.showToast({
+    //   title: '功能施工中，敬请期待！',
+    //   icon: 'none',
+    //   duration: 2000
+    // })
   },
   tolocation: function () {
     var that = this;
@@ -715,11 +767,11 @@ dianjia:function(event){
                 var newarr = arr.split(" ");
                 console.log(typeof params.query);
                 console.log("最终选中的内容为：" + newarr);
-                wx.showToast({
-                  title: '筛选功能开发中，敬请期待！',
-                  icon: 'none',
-                  duration: 2000
-                })
+                // wx.showToast({
+                //   title: '筛选功能开发中，敬请期待！',
+                //   icon: 'none',
+                //   duration: 2000
+                // })
               }
             })
           }
@@ -727,6 +779,7 @@ dianjia:function(event){
       },
     })
     let that = this;
+   that.test()
     that.setImgBroadcast();
     that.youxuan();
     console.log(that.data.youxuanlist)
@@ -740,6 +793,7 @@ dianjia:function(event){
    */
   onReady: function () {
     let vm = this;
+    vm.test();
     vm.getUserLocation();
   },
 
@@ -747,7 +801,8 @@ dianjia:function(event){
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+  let that=this;
+  that.test();
   },
   getUserLocation: function () {
     let vm = this;
@@ -812,7 +867,7 @@ dianjia:function(event){
           latitude1: latitude,
           longitude1: longitude,
         })
-        vm.funjin();
+        // vm.funjin();
         var speed = res.speed
         var accuracy = res.accuracy;
         vm.getLocal(latitude, longitude)
@@ -886,7 +941,7 @@ dianjia:function(event){
       youxuanlist: [],
       fujinlist: [],
     })
-
+  that.test();
     that.setImgBroadcast();
     that.youxuan();
     qqmapsdk = new QQMapWX({

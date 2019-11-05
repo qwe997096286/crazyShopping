@@ -1,0 +1,56 @@
+<view class="huatixiangqing-page">
+  <view class='content'>
+   <view>
+
+    <image src="../../images/rotating.png"  mode='aspectFill' class="img-plus-style" bindtap="torelease"></image>
+  </view>
+    <view class='huati'>
+      <view class='b-left'>
+        <view class='img'><image src='{{imgurl}}'></image></view>
+      </view>
+      <view class='b-right'>
+        <view class='r-con'>
+          <view class='title'>
+            <view class='t-con'>
+              <text>#{{title}}#</text>
+            </view>
+          </view>
+          <view class='yuedu'>
+            <view class='n-con'>
+              <view>阅读量</view>
+              <view class='yueduliang'>{{brow}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='neirong'>
+    <view class='daoyu'><view class='d-con'><text>导语：</text><text class='dao-text'>{{daoyu}}</text></view></view>
+    <view class='tiezi-all'>
+    <view class='zhiding'><view class='zd-font'>置顶</view></view>
+     <view class='all-tiezi'>
+      <view class='tiezi' wx:for="{{tiezi}}" wx:key="*this" id="{{item.id}}" bindtap='detailPage'>
+      <view class='tiezi-tit'>
+        <view class='tit-font'><view class='biaoti'>{{item.title}}</view></view>
+      </view>
+      <view class='tiezi-con'>
+        <view class='con-neirong'><text>{{space}}{{space}}{{item.content}}</text></view>
+      </view>
+      <view class='tiezi-bottom'>
+        <view class='user'>
+          <view class='name'>
+         {{item.name}}</view>
+          <view class='info'>发布于</view>
+          <view class='info'>{{item.year}}{{item.day}}{{item.minute}}</view>
+        </view>
+        <view class='pinglun'>
+          <view class='iconfont icon-liulan'></view>
+          <view class='num'><view>{{item.brow}}</view></view>
+        </view>
+      </view>
+    </view>
+     </view>
+    </view>
+    </view>
+  </view>
+</view>

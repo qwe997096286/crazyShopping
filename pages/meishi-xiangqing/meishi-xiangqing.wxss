@@ -1,0 +1,206 @@
+/* pages/meishi/meishi-xiangqing/meishi-xiangqing.wxss */
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1553600181649'); /* IE9 */
+  src: url('iconfont.eot?t=1553600181649#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPgAAsAAAAAB/QAAAORAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDFAqDMIJ6ATYCJAMQCwoABCAFhG0HTRvpBsgOJaHY8MAAAGBgBF/7sX139wXTJEm1+3SSJjzRKVFTpVMaQ0geMsNQnjUpFuAsibSdoEo2nT2SL+gFFyfgf46ZLm0C+d+bzyUrcLQ3wFECDSiqKS7sgO/E8YaxKy9iP4FOE6IR+6XVzcBCYQwLxC1Lk8AipVRqMkMr1CVzC4gHINWm6aILALj3/z5+QWJYAEmVgTH24KZEAfI/wDMX8bj/40C3iwCs8fRgi8hYBBTirNR4ShwGF4l1KttJLANqRUgfxIfL//+MyfCVrPMfXossCaIGRno32IShzAewmbGIgHIJilwg++T3KqBFgzvACwM35uxQpDkbG1tbO7uRK3cE85tWp5BuHYsXb13q1rnETWbRIpvLUncdjJ2xhBjn0r0oSUNfrDp80XBSbzxtilp6NOmsXm8wmEzG3B3n2q4ZZ+jr9RNaEG2a2N7capzYdsI005BjmDDc7dEtb6KtpdlgqHHbCqtukm2tzW5bjK1u/vpJC8hj718ZI99FWlTU/auJDr/hMse9JibrQOpHwYAAu0BQ8BYJoaRETDg/dQjr+/Y1zf+k+C7bUptC7wLnkdLi6e9ys+a1lLoJSaQ6moX5/Vba6a1bP41gZmWtnp3F8COy+JFOHiblwMislXNevG/bT9v0M/eGJU4emngv+HYbsHog1e9afevMC5+VeO3V+k6v8tVTxqsrj2+/9f7wxYXTFjS2jR2gi4+U390WxHmX1WpmAx7A/xZxqWgtJqwTTxaT4d95qtjm5/Xz/PdyaZ999lcL6yuoej8Zdxg5/tdJQPsUrQRj/SpWy5KicgxVKTLXZmqmYj0RJ6HTVPGLsmHQvTHMI0CsDy1nQUga45C1JpEFuwiVLptQa21BpwVli7sMEYhFsQTMmwwg9NsLSa9XyPpdRBbsXaiMegu1/hBDp8NwXrPLdLBWRQIiMVJA2XDIyjktZWmwVZDZiOhBNSkkOT6+FQk61gMTYuOzkTKkRcIYE3RD6ESMKUgJnAaWgsOQWs1BXuCUSI5jGYz5zLg4quxJsXJOA6zsESAkDFGAZIaDWHIcLcqtjFnlfr8RQhukRhJqiirUrRCBDts6lCBWfAtkmVDbquhaHtEZgpYIwygQRcDRgEqBHlGbQQ7El/dSQuSwWEwPPy9THCpHtRXGzi/WPOEm6GRsU0JEiAkJIQXNFckxpJa2Of/8GAWrpYci1soulLEkh9kYAAAAAAA=') format('woff2'),
+  url('iconfont.woff?t=1553600181649') format('woff'),
+  url('iconfont.ttf?t=1553600181649') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1553600181649#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-daohang:before {
+  content: "\e614";
+}
+
+.icon-icon-dingwei:before {
+  content: "\e601";
+}
+
+.icon-weibiaoti-:before {
+  content: "\e600";
+}
+
+
+
+
+page{
+  background-color: #eee;
+}
+.img{
+  height: 350rpx;
+  width: 100%;
+}
+.box{
+  width: 100%;
+  border-bottom: 1rpx solid rgb(156, 156, 156);
+  background-color: white;
+  margin-top: -7rpx;
+}
+.box-font{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30rpx;
+}
+.box-font2{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10rpx;
+  font-size: 30rpx;
+  color: rgb(187, 187, 187);
+  padding-bottom: 30rpx;
+  border-bottom: 1rpx solid rgb(216, 216, 216);
+}
+.box-font3{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 150rpx;
+}
+.box-font3-a1{
+  width: 70%;
+  height: 120rpx;
+  border-right: 1rpx solid rgba(223, 223, 223, 0.404);
+  display: flex;
+  align-items: center;
+}
+.icon-icon-dingwei{
+  font-size: 30rpx;
+  width: 80rpx;
+}
+.box-font3-a1-b{
+  font-size: 27rpx;
+  margin-right: 10rpx;
+}
+.box-font3-a2{
+  width: 30%;
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+}
+.box-font3-a2-box{
+  width: 50%;
+  height: 120rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.icon-daohang{
+  font-size: 45rpx;
+  color: rgb(255, 119, 65);
+}
+.icon-weibiaoti-{
+  font-size: 47rpx;
+  color: rgb(255, 119, 65);
+}
+.box-font3-a2-box-font{
+  font-size: 30rpx;
+}
+/* 相关攻略 */
+
+.main-bottom {
+  width: 96%;
+  margin: 0 auto;
+  overflow: hidden;
+  background: rgb(255, 255, 255);
+  border-radius: 20rpx;
+}
+.img2{
+  width: 100%;
+}
+.main {
+  margin-top: 20rpx;
+  background-color: white;
+}
+
+.main-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 0 20rpx 0;
+}
+
+.main-top-left {
+  margin-left: 40rpx;
+  font-weight: 600;
+}
+.main-bottom-font{
+  word-break:break-all; 
+  padding-bottom: 50rpx;
+  
+}
+/* 评论 */
+
+.comment{
+  width: 100%;
+  background-color: white;
+  margin-top: 20rpx;
+  padding-bottom: 25rpx;
+}
+.comment-top{
+  width: 94%;
+  margin: 0 auto;
+  padding-top: 15rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid rgb(201, 201, 201);
+}
+.comment-box{
+  width: 94%;
+  margin: 15px auto 0 auto;
+ 
+  box-shadow: 1px 3px 3px 1px #888;
+}
+.comment-box-top{
+  border-bottom: 1rpx solid rgb(223, 223, 223);
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  display: flex;
+}
+.comment-box-top-left{
+  border-radius: 50%;
+  background-color: rgb(56, 165, 255);
+  width: 70rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  color: white;
+  font-size: 30rpx;
+  font-weight: 600;
+  margin-left:15rpx; 
+}
+.comment-box-top-right{
+  height: 70rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left:15rpx; 
+}
+.comment-box-top-right-top{
+  font-size: 30rpx;
+}
+.comment-box-top-right-bottom{
+  font-size: 25rpx;
+}
+.comment-box-bottom{
+  word-break: break-word;
+  width: 96%;
+  margin: 0 auto;
+  font-size: 30rpx;
+}
+.end{
+  padding-top: 20rpx;
+  padding-bottom: 100rpx;
+  margin: 0 auto;
+  color: rgb(206, 206, 206);
+  text-align: center;
+}

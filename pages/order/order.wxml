@@ -4,11 +4,11 @@
     <view class="tab-item {{currentTab == 1 ? 'active' : ''}}" bindtap='clickMenu' data-current="1" data-status='0'>待付款</view>
     <view class="tab-item {{currentTab == 2 ? 'active' : ''}}" bindtap='clickMenu' data-current="2" data-status='1'>待收货</view>
     <view class="tab-item {{currentTab == 3 ? 'active' : ''}}" bindtap='clickMenu' data-current="3" data-status='2'>待评论</view>
-    <view class="tab-item {{currentTab == 4 ? 'active' : ''}}" bindtap='clickMenu' data-current="4" data-status='3'>退款/售后</view>
+    <view class="tab-item {{currentTab == 4 ? 'active' : ''}}" bindtap='clickMenu' data-current="4" data-status='3'>已退款</view>
   </view>
 
 
-  <view class='orderList' bindtap='toOrderDetail' data-orderid='{{item.orderId}}' wx:for="{{orderList}}" wx:key="key">
+  <view class='orderList' bindtap='toOrderDetail' id='{{item.orderId}}' wx:for="{{orderList}}" wx:key="key">
     <view class='order-head'>
       <view class='order-head-mes'>
         <view class='order-head-nickname'>{{item.shopName}}</view>
@@ -27,13 +27,17 @@
     </view>
   <view class='orderBtn'>
     <view class='order-all'>
-      <view class='btn-cancelOrder' wx:if="{{item.logistics == 0}}" data-orderid='{{item.orderId}}' catchtap='cancelOrder'>取消订单</view>
-       <view class='btn-pay' wx:if="{{item.state == 1 && item.logistics == 0 }}" catchtap='toPay' data-price='{{item.price}}' data-orderid='{{item.orderId}}'>付款</view>
-         <view class='btn-stay' wx:if="{{item.state == 1 && item.logistics == 1 }}"catchtap='toView'>确认收货</view>
-     <view class='btn-pingjia' wx:if="{{item.state == 2&& item.logistics == 1}}" data-orderid='{{item.orderId}}' catchtap='toView'>评价</view>
-     <view class='btn-refund' wx:if="{{item.state == 3 && item.logistics == 1 }}"
-        catchtap='refundOrder'>申请退款</view>
+      <view class='btn-cancelOrder' wx:if="{{item.logistics == 0 &&item.state == 0}}" data-orderid='{{item.id}}' catchtap='cancelOrder'>取消订单</view>
+       <view class='btn-pay' wx:if="{{item.state == 0 && item.logistics == 0 }}" catchtap='toPay' data-price='{{item.sum}}' data-goodsid='{{item.goodsId}}' data-orderid='{{item.orderId}}'>付款</view>
+         <view class='btn-stay' wx:if="{{(item.state == 1 && item.logistics == 0) ||(item.state == 1 && item.logistics == 1) }}" data-orderid='{{item.id}}' catchtap='toView'>确认收货</view>
+     <view class='btn-refund' wx:if="{{(item.state == 2&& item.logistics == 1)}}" data-orderid='{{item.orderId}}' catchtap='toView'>评价</view>
+     <view class='btn-refund' wx:if="{{(item.state == 1 && item.logistics == 0)||(item.state == 1 && item.logistics == 1) }}"
+        catchtap='refundOrder' data-orderid='{{item.orderId}}' data-ordersum='{{item.sum}}'>申请退款</view>
+           <!-- <view class='btn-refund' wx:if="{{(item.state == 2 && item.logistics == 1)||(item.state > 1 && item.logistics == 1)||(item.state == 3 && item.logistics == 1) }}"
+        catchtap='refundOrder'>申请售后</view> -->
   </view>
+   
+ 
     </view>
   </view>
   <modal hidden="{{true}}" title="申请退款" confirm-text="提交" cancel-text="取消" bindcancel="cancelRefund" bindconfirm="confirmRefund">

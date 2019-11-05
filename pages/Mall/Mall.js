@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    url:'http://94.191.106.228:8080/Agriculture',
+    url:'https://www.sxscott.com/agriculture',
     color1: 'rgba(0,0,0,0.5)',
     color2: 'rgba(0,0,0,0.5)',
     color3: 'rgba(0,0,0,0.5)',
@@ -59,7 +59,7 @@ Page({
       url: that.data.url+'/agro/getShopList', // 仅为示例，并非真实的接口地址
       method: 'post',
       data: {
-        typeId:that.data.leixing
+        key:that.data.leixing
       },
       header: {
         'content-type': 'application/json' // 默认值
@@ -140,7 +140,7 @@ Page({
       url:that.data.url+'/agro/getShopList', // 仅为示例，并非真实的接口地址
       method: 'post',
       data: {
-        typeId: that.data.leixing
+        key: that.data.leixing
       },
       header: {
         'content-type': 'application/json' // 默认值
@@ -231,7 +231,7 @@ Page({
       url: that.data.url +'/agro/getShopList', // 仅为示例，并非真实的接口地址
       method: 'post',
       data: {
-        typeId: that.data.leixing
+        key: that.data.leixing
       },
       header: {
         'content-type': 'application/json' // 默认值
@@ -322,7 +322,7 @@ Page({
       url: that.data.url +'/agro/getShopList', // 仅为示例，并非真实的接口地址
       method: 'post',
       data: {
-        typeId: that.data.leixing
+        key: that.data.leixing
       },
       header: {
         'content-type': 'application/json' // 默认值
@@ -415,54 +415,55 @@ Page({
     console.log(options.id);
     let key=options.id;
     switch (key) {
-      case '水果超市':
-        that.setData({
-          leixing: 1,
-          key:key,
-        })
-        break;
+    
       case '蔬果农场':
       
         that.setData({
-          leixing: 2,
+          leixing: '蔬果',
            key: key,
         })
         break;
       case '畜牧农场':
         that.setData({
-          leixing: 3,
+          leixing: '畜牧',
            key: key,
         })
         break;
       case '旅游产业':
         that.setData({
-          leixing: 4,
+          leixing: '旅游',
            key: key
         })
         break;
       case '学农商品':
         
         that.setData({
-          leixing: 5,
+          leixing: '学农',
           key: key
         })
         break;
-      case '聚会商品':
+      case '农庄农场':
         that.setData({
-          leixing: 6,
+          leixing: '农庄',
+          key: key,
+        })
+        break;
+      case '聚点商铺':
+        that.setData({
+          leixing: '聚点',
           key: key
         })
         break;
-      case '散户商品':
+      case '散户商铺':
       
         that.setData({
-          leixing: 7,
+          leixing: '散户',
           key: key,
         })
         break;
       case '其他商品':
         that.setData({
-          leixing: 8,
+          leixing: '其他',
           key: key,
         })
         break;

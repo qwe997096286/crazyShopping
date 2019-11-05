@@ -1,37 +1,45 @@
 <view class='Mall-page'>
-    <view class='fujin-allpaixu'>
-            <view class='fujin-pauxu'>
-              <view bindtap='xiaoliangpx' class='xiaoliang' style="color:{{color1}};">
-                <text>销量高</text>
-              </view>
-              <view bindtap='jiagepx' class='xiaoliang' style="color:{{color2}};">
-                <text>价格低</text>
-              </view>
-              <view bindtap='pingjiapx' class='xiaoliang' style="color:{{color3}};">
-                <text>评价好</text>
-              </view>
-            </view>
+  <view class='fujin-allpaixu'>
+    <view class='fujin-pauxu'>
+      <view bindtap='xiaoliangpx' class='xiaoliang' style="color:{{color1}};">
+        <text>销量高</text>
       </view>
-       <view class='fujin-content'>
-          <view class='cont1' wx:for="{{fujinlist}}" bindtap='dianjia' wx:key="*this" id="{{item.id}}">
-            <view class='sj-logo'>
-            <image src='{{item.simage}}'></image>
-            </view>
-            <view class='sj-info'>
-            <view class='sj-name'>{{item.shopName}}</view>
-               <view class='sj-xinyu'>
-               <view class='xy-left'> <view>信誉度：{{item.sgrade}}分</view>
-                <view class='yueshou'> 月售：{{item.monthlySale}}</view></view>
-               <view class='xy-right'><view class='distance'>{{item.distance}}km</view>
-              </view></view>
-              
-            
-                  <view class='sj-renjun'>
-                  <view> 起送￥30 | 配送￥10.5</view>
-                    <view class='renjun'> 人均 ￥{{item.perCapita}}</view>
-                 </view>
-                     <view class='sj-leixing'>{{key}}</view>
-            </view>
-            </view>
+      <view bindtap='jiagepx' class='xiaoliang' style="color:{{color2}};">
+        <text>价格低</text>
+      </view>
+      <view bindtap='pingjiapx' class='xiaoliang' style="color:{{color3}};">
+        <text>评价好</text>
+      </view>
+    </view>
+  </view>
+  <view class='fujin-content'>
+    <view class='cont1' wx:for="{{fujinlist}}" bindtap='dianjia' wx:key="*this" id="{{item.id}}">
+      <view class='sj-logo'>
+        <image mode='aspectFill' src='{{item.simage}}'></image>
+      </view>
+      <view class='sj-info'>
+        <view class='sj-name'>
+          <image src='../../images/yx.png'></image>
+          {{item.shopName}}
+        </view>
+        <view class='sj-xinyu'>
+          <view class='xy-left'>
+            <view>信誉度：{{item.sgrade}}分</view>
+            <view class='yueshou'> 月售：{{item.monthlySale}}</view>
           </view>
+          <view class='xy-right'>
+            <view class='distance'>{{item.distance}}km</view>
+          </view>
+        </view>
+
+
+        <view class='sj-renjun'>
+          <view> 起送￥30 | 配送￥10.5</view>
+          <view class='renjun'> 人均 ￥{{item.perCapita}}</view>
+        </view>
+        <view class='sj-leixing'>{{key}}</view>
+      </view>
+      
+    </view>
+  </view>
 </view>

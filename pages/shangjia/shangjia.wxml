@@ -28,7 +28,7 @@
   </view>
   <view class='conten'>
   <view class='fenlei {{gray}}'>
-  <view class="items {{current_item === index?'selected':''}}"  wx:for="{{fenlei}}"  data-key='{{index}}' catchtap='white'><text>{{item.name}}</text></view>
+  <view class="items {{current_item === index?'selected':''}}"  wx:for="{{fenlei}}"  data-key='{{index}}' data-id='{{item.id}}' catchtap='white'><text>{{item.name}}</text></view>
    <!-- <view class='fen1'><text>夏日冰爽搭配</text></view>
     <view class='fen1'><text>本店搞活动</text></view>
      <view class='fen1'><text>特色双拼套餐饭撒大苏打的是</text></view> -->

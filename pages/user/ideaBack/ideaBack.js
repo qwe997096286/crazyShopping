@@ -93,7 +93,7 @@ Page({
       } else {
         console.log(that.data)
         wx.request({
-          url: 'http://94.191.106.228:8080/Agriculture/agro/opinionInput',
+          url: 'https://www.sxscott.com/agriculture/agro/opinionInput',
           method: 'POST',
           data: {
             proposal: that.data.userProposal,

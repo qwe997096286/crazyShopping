@@ -1,0 +1,65 @@
+<view>
+  <form  report-submit="true">
+    <view class="address-box" >
+   
+      <view class="show-address" catchtap="selectAddress">
+        <view class="name-tel">{{address}}</view>
+        <view class="addr-text">{{addressName}} {{addressPhone}}</view>
+      </view>
+    </view>
+    <view class="goods-list">
+      <view class="list-title">商品列表</view>
+      <view class="a-goods">
+        <view class="img-box">
+          <image src="{{gimage}}" class="img" />
+        </view>
+        <view class="text-box">
+          <view class="arow arow01">
+            <view class="goods-name">{{name}}</view>
+            <view class="goods-price">¥ {{price}}</view>
+          </view>
+          <view class="arow">
+            <view class="goods-label">{{jieshao}}</view>
+            <view class="goods-num">x 1</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="peisong-way">
+      <view class="row-box" wx:if="{{isNeedLogistics > 0}}">
+        <view class="row-label">交易方式</view>
+        <view class="right-text" >{{goodsDetail.tradingWay}}</view>
+      </view>
+      <view class="row-box">
+        <view class="row-label">备注</view>
+        <view class="right-text">
+          <input name="remark" type="text" class="liuyan" placeholder="如需备注请输入" />
+        </view>
+      </view>
+    </view>
+<!-- 
+
+    <view class="goods-info" wx:if="{{(isNeedLogistics > 0 && yunPrice > 0) || (!hasNoCoupons)}}">
+      <view class="row-box" wx:if="{{isNeedLogistics > 0 && yunPrice > 0}}">
+        <view class="row-label">商品金额</view>
+        <view class="right-text">¥ {{allGoodsPrice}}</view>
+      </view>
+      <view class="row-box" wx:if="{{isNeedLogistics > 0 && yunPrice > 0}}">
+        <view class="row-label">运费</view>
+        <view class="right-text">+ ¥ {{yunPrice}}</view>
+      </view>
+    </view> -->
+
+    <view class="jiesuan-box">
+      <view class="left-price">
+        <view class="total">合计：¥ {{price}}</view>
+      </view>
+      <button class="to-pay-btn" disabled="{{once}}" formType="submit" bindtap='{{canPay == 1 ? "payBtn":""}}' data-userid='{{goodsDetail.userId}}' data-goodsname='{{goodsDetail.goodsTitle}}' data-goodsprice='{{goodsDetail.sum}}'>支付</button>
+    </view>
+  </form>
+</view>
+<view>
+    <!-- <loading hidden="{{lodingHidden}}">
+        加载中..
+    </loading> -->
+</view>

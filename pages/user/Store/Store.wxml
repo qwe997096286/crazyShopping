@@ -6,7 +6,7 @@
   </view>
   <view class='Brand-item'>
     <view class='title'>商标</view>
-    <image class='tianjia' src="{{simage}}"  bindtap='shangChuang'></image>
+    <image class='tianjia' mode='aspectFill' src="{{simage}}"  bindtap='shangChuang'></image>
     </view>
     <view class='zhuMess-item'>
       <view class='zhuTitle'>主营项目</view>
@@ -25,6 +25,10 @@
     <view class='Mess-item'>
       <view class='title'>联系电话</view>
       <input class='text' bindinput='phoneInput'maxlength='11' placeholder='输入联系人号码' type="number"></input>
+    </view>
+     <view class='Mess-item'>
+      <view class='title'>店铺密码</view>
+      <input class='text' bindinput='passInput'maxlength='11' placeholder='输入密码' type="number" password='true'></input>
     </view>
     <view class='Mess-item' bindtap='dizhi'>
         <view class='title'>商家地址</view>

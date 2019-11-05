@@ -1,7 +1,7 @@
 
 Page({
   data: {
-    url: 'http://94.191.106.228:8080/Agriculture',
+    url: 'https://www.sxscott.com/agriculture',
     id: null,
     userId: null,
     name: '',

@@ -4,7 +4,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    url: 'http://94.191.106.228:8080/Agriculture',
+    url: 'https://www.sxscott.com/agriculture',
     currentTab: 0,
   },
   //单击导航栏

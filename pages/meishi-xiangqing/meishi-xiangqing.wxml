@@ -1,0 +1,41 @@
+<!--pages/meishi/meishi-xiangqing/meishi-xiangqing.wxml-->
+<view>
+<image class='img' mode='aspectFill' src='https://s2.ax1x.com/2019/04/26/EmdQTe.jpg'></image>
+<view class='box'>
+  <view class='box-font'>绍兴</view>
+  <view class='box-font2'>当地特色</view>
+  <view class='box-font3'>
+    <view class='box-font3-a1'>
+     <view class='iconfont icon-icon-dingwei'></view>
+     <view class='box-font3-a1-b'>群贤中路22222222号浙江文理元培学院镜湖校区xxx幢</view>
+    </view>
+    <view class='box-font3-a2'>
+      <view class='box-font3-a2-box'>
+        <view class='iconfont icon-daohang'></view>
+        <view class='box-font3-a2-box-font'>导航</view>
+      </view>
+      <view class='box-font3-a2-box'>
+        <view class='iconfont icon-weibiaoti-'></view>
+        <view class='box-font3-a2-box-font'>电话</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='main'>
+  <view class='main-top'>
+    <view class='main-top-left'>农业介绍</view>
+  </view>
+  <view class="main-bottom"> 
+    <image class='img2' mode='aspectFill' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556262003502&di=ea811f5cb58927a9599beea64ecb06d5&imgtype=0&src=http%3A%2F%2Fbaike.ipa361.com%2Fuploads%2F201603%2F1458547600apT9NWyB.jpg'></image>
+    <view class='main-bottom-font'>农业（Agriculture）是利用动植物的生长发育规律，通过人工培育来获得产品的产业。农业属于第一产业，研究农业的科学是农学。农业的劳动对象是有生命的动植物，获得的产品是动植物本身。农业是提供支撑国民经济建设与发展的基础产业。</view>
+  </view>
+  <view class="main-bottom"> 
+    <image class='img2' mode='aspectFill' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556261983283&di=551ba11dede4bfba6f5e22f35e4957ab&imgtype=0&src=http%3A%2F%2Fmof.hainan.gov.cn%2Fhainan%2Fzhl%2F201812%2F332bfea4b640459e959fdb65714499e0%2Fimages%2F95fed82bb7084c90969a445ba93146ec.jpg'></image>
+    <view class='main-bottom-font'>农业为通过培育动植物生产食品及工业原料的产业。农业属于第一产业，研究农业的科学是农学。农业的劳动对象是有生命的动植物，获得的产品是动植物本身．我们把利用动物植物等生物的生长发育规律，通过人工培育来获得产品的各部门，统称为农业．农业是支撑国民经济建设与发展的基础产品。农业是人们利用动植物体的生活机能，把自然界的物质和能转化为人类需要的产品的生产部门。现阶段的农业分为植物栽培和动物饲养两大类。土地是农业中不可替代的在基本生产资料，劳动对象主要是有生命的动植物，生产时间与劳动时间不一致，受自然条件影响大，有明显的区域性和季节性。农业是人类衣食之源、生存之本，是一切生产的首要条件。它为国民经济其他部门提供粮食、副食品、工业原料、资金和出口物资。农村又是工业品的最大市场和劳动力的来源。</view>
+  </view>
+  <view class="main-bottom"> 
+    <image class='img2'mode='aspectFill' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556261951298&di=191c0447ef0bdecfed32a4ee86d6dcc0&imgtype=0&src=http%3A%2F%2Fimg2.ctoutiao.com%2Fuploads%2F2017%2F09%2F10%2Fedcf9a50b93679d854f8a3434a4f3c89.jpg'></image>
+    <view class='main-bottom-font'>有关中国农业起源的问题，是学术界十分关心的课题。中国考古学界几十年来一直把它作为一个重要的学术课题进行探索，在江淮河汉诸流域及广大地域内进行调查、发掘，发现了一批遗址，如广西桂林甑皮岩、江西万年仙人洞、河北武安磁山、河南新郑裴李岗、河北徐水南庄头、湖南澧县彭头山等地点。前两处遗址的年代距今约八、九千年。武安磁山遗址和新郑裴李岗遗址的年代，也比中原地区的仰韶文化年代要早，距今已有七八千年之久。其中最令人注目的是1986年在河北省徐水县发现的南庄头遗址。在发掘的60余平方米的范围内，发现了一条小灰沟和草木灰层，出土了兽骨、禽骨、鹿角、蚌、螺壳、木炭、石料，以及石器、骨角器、木板、木棒、夹沙红陶片等与居民生活有关的遗物。特别是作为谷物加工工具的石磨盘和石磨棒在遗址中出土，说明当时已有农作物栽培业出现。据碳14测定，它的年代为距今10510±u65297X10—9690±u65305X5年（未作校正）。它比磁山文化还早，甚至比江西万年仙人洞、广西桂林甑皮岩遗址还早千年之久。它是中国发现的新石器时代遗址中年代最早的一处，因此，它把中国农业起源的时间上推至万年以前。</view>
+  </view>
+</view>
+</view>

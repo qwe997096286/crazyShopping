@@ -31,7 +31,14 @@
     "pages/view/view",
     "pages/order/order",
     "pages/trip/trip",
-    "pages/tuikuan/tuikuan"
+    "pages/tuikuan/tuikuan",
+    "pages/huatibang/huatibang",
+    "pages/huatitie/huatitie",
+    "pages/daifukuan/daifukuan",
+    "pages/huatixiangqing/huatixiangqing",
+    "pages/secondHandPaySuccess/secondHandPaySuccess",
+    "pages/xuenong/xuenong",
+    "pages/xuenongDetail/xuenongDetail"
   ],
   "permission": {
     "scope.userLocation": {
@@ -47,31 +54,32 @@
   "tabBar": {
     "color": "#CECECE",
     "selectedColor": "#67CB33",
-  "list": [
-    {
-      "selectedIconPath": "images/首页1.png",
-      "iconPath": "images/首页.png",
-      "pagePath": "pages/index/index",
-      "text": "首页"
-    },
-    {
-      "selectedIconPath": "images/社区.png",
-      "iconPath": "images/社区1.png",
-      "pagePath": "pages/conminuity/conminuity",
-      "text": "社区"
-    },
-    {
-      "selectedIconPath": "images/订单.png",
-      "iconPath": "images/订单 1.png",
-      "pagePath": "pages/order/order",
-      "text": "订单"
-    },
-    {
-      "selectedIconPath": "images/我的1.png",
-      "iconPath": "images/我的.png",
-      "pagePath": "pages/user/index",
-      "text": "我的"
-    }
-  ]
-  }
-  }
+    "list": [
+      {
+        "selectedIconPath": "images/首页1.png",
+        "iconPath": "images/首页.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/社区.png",
+        "iconPath": "images/社区1.png",
+        "pagePath": "pages/conminuity/conminuity",
+        "text": "社区"
+      },
+      {
+        "selectedIconPath": "images/订单.png",
+        "iconPath": "images/订单 1.png",
+        "pagePath": "pages/order/order",
+        "text": "订单"
+      },
+      {
+        "selectedIconPath": "images/我的1.png",
+        "iconPath": "images/我的.png",
+        "pagePath": "pages/user/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

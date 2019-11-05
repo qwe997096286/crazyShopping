@@ -10,68 +10,72 @@ Page({
     userInfo: null,
     show: false,
     number: null,
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) {
+  onLoad: function (options) {
     wx.showLoading({
       title: '加载中',
     })
-    setTimeout(function() {
+    setTimeout(function () {
       wx.hideLoading()
     }, 2000)
-    console.log(this.data.userInfo)
+
+    // this.test();
+    console.log(this.data.userInfo);
+    console.log(111);
   },
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function() {
+  onReady: function () {
 
   },
-  toMyMoney: function() { //我的资产
+  toMyMoney: function () { //我的资产
     wx.navigateTo({
       url: 'Money/Money',
-      success: function(res) {},
-      fail: function(res) {},
-      complete: function(res) {},
+      success: function (res) { },
+      fail: function (res) { },
+      complete: function (res) { },
     })
   },
-  toStoreEnter: function() { //商家入驻
+  toStoreEnter: function () { //商家入驻
     wx.navigateTo({
       url: 'Store/Store',
     })
   },
-  toMyCard: function() { //我的卡劵
+  toMyCard: function () { //我的卡劵
     wx.navigateTo({
       url: 'Card/Card',
     })
   },
-  toAddress: function() { //我的地址
+  toAddress: function () { //我的地址
     wx.navigateTo({
       url: 'Address/Address',
     })
   },
-  toideaBack: function() { //意见反馈
+  toideaBack: function () { //意见反馈
     wx.navigateTo({
       url: 'ideaBack/ideaBack',
     })
   },
-  toNewsEnter: function() {
+  toNewsEnter: function () {
     wx.navigateTo({
       url: 'newsEnter/newsEnter',
     })
   },
 
-  number: function(e) { //获取手机号码
+  number: function (e) { //获取手机号码
     this.setData({
       number: e.detail.value
     })
-
   },
-  sumbit: function() { //提交
+  sumbit: function () { //提交
     var that = this;
     var phone = that.data.number;
     if (phone == null || phone == '') {
@@ -119,13 +123,13 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function() {
+  onShow: function () {
     var that = this
     app.login()
     that.setData({
       userInfo: wx.getStorageSync('userinfo')
     })
-    console.log(that.data.userInfo)
+    console.log(that.data.userInfo);
     if (wx.getStorageSync("isBinding") === '2') { //未绑定弹出框
       that.setData({
         show: true
@@ -139,35 +143,35 @@ Page({
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function() {
+  onHide: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function() {
+  onUnload: function () {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function() {
+  onPullDownRefresh: function () {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function() {
+  onReachBottom: function () {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function() {
+  onShareAppMessage: function () {
 
   }
 })

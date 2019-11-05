@@ -14,7 +14,7 @@
 // var wss ="wss://www.sxscott.com/crazyBird/websocket/"
 //本地
 
-var host = "http://94.191.106.228:8080/Agriculture"
+var host = "https://www.sxscott.com/agriculture"
 var wss ="wss://www.sxscott.com/crazyBird/websocket/"
 var config = {
   host,wss,

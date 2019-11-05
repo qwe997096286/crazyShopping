@@ -10,13 +10,25 @@ Page({
     business: '',
     idcard: '',
     licence: '',
+    pass:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let pass;
+    wx.getStorage({
+      key: 'pass',
+      success(res) {
+        console.log(res.data)
+         pass=res.data
+      }
+    })
+    this.setData({
+      pass:pass
+    })
+    console.log(this.data.pass)
   },
 
 
@@ -64,27 +76,31 @@ Page({
     var business = wx.getStorageSync('business');
     var licence = wx.getStorageSync('licence');
     var idcard = wx.getStorageSync('idcard')
-    if (business == null || business == '') {
-      wx.showModal({
-        title: '提示',
-        content: '请上传营业执照',
-      })
-    }
-    else if (licence == null || licence == '') {
-      wx.showModal({
-        title: '提示',
-        content: '请上传许可证',
-      })
-    }
-    else if (idcard == null || idcard == '') {
-      wx.showModal({
-        title: '提示',
-        content: '请上传身份证照',
-      })
-    }
-    else {
+    console.log(storeInfo)
+    console.log(storeInfo.simage)
+    // if (business == null || business == '') {
+    //   wx.showModal({
+    //     title: '提示',
+    //     content: '请上传营业执照',
+    //   })
+    // }
+    // else if (licence == null || licence == '') {
+    //   wx.showModal({
+    //     title: '提示',
+    //     content: '请上传许可证',
+    //   })
+    // }
+    // else if (idcard == null || idcard == '') {
+    //   wx.showModal({
+    //     title: '提示',
+    //     content: '请上传身份证照',
+    //   })
+    // }
+    // else {
+ 
+    console.log(this.data.pass)
       wx.request({
-        url: 'http://94.191.106.228:8080/Agriculture/agro/shopInput',
+        url: 'https://www.sxscott.com/agriculture/agro/shopInput',
         header: {
           'content-type': 'application/json',
         },
@@ -95,13 +111,14 @@ Page({
           'saddress': storeInfo.saddress,
           'phone': storeInfo.phone,
           'name': storeInfo.name,
-          'simage': storeInfo.arr_img,
+          'simage': storeInfo.simage,
           'location': storeInfo.location,
           'openId': storeInfo.openId,
           'initial': 0,
           'business': business.business,
           'licence': licence.licence,
-          'idcard': idcard.idcard
+          'idcard': idcard.idcard,
+           'password':this.data.pass
         },
         success(res) {
           if (res.data.code == 200) {
@@ -120,13 +137,13 @@ Page({
           })
         },
         complete(res) {
-          wx.navigateTo({
-            url: '../../index/index',
+          wx.navigateBack({
+            delta: 2
           })
         }
 
       })
-    }
+    // }
 
   },
   /**

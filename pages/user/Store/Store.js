@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    url: 'http://94.191.106.228:8080/Agriculture',
+    url: 'https://www.sxscott.com/agriculture',
     array: [{
         value: '蔬果',
         check: 'true'
@@ -28,16 +28,17 @@ Page({
     ],
     openId: '',
     shopName: null,
-    stype: '水果',
+    stype: '蔬果',
     saddress: '点击选择',
     name: '',
     phone: '',
-    simage: '../../../../images/addpic.png',
+    simage: '/images/addpic.png',
     buttonShow: 'block',
     location: '',
     index: 0,
     arr_img: [],
     type:null,
+    userpass:''
   },
   //获取主营项目
   checkboxChange: function(e) {
@@ -64,7 +65,13 @@ Page({
     })
 
   },
-
+  passInput:function(e){
+    let pass = e.detail.value;
+    wx.setStorage({
+      key: 'pass',
+      data: e.detail.value
+    })
+  },
   shopNameInput: function(e) {
     let name = e.detail.value;
     console.log(name)
@@ -126,7 +133,7 @@ Page({
         })
         console.log(that.data.type)
         wx.uploadFile({
-          url: 'http://94.191.106.228:8080/Agriculture/upload/avatar',
+          url: 'https://www.sxscott.com/agriculture/upload/avatar',
           filePath: tempFilePaths[0],
           name:'file',
           formData: {
@@ -152,7 +159,7 @@ Page({
     var simage = that.data.arr_img[0];
     var stype = that.data.stype;
     var myreg = /^[1][3,4,5,6,7,8,9][0-9]{9}$/;
-
+    console.log(simage)
     if (shopName === "" || shopName == null) {
       console.log(shopName)
       wx.showToast({
@@ -208,8 +215,10 @@ Page({
           'location': that.data.location,
           'openId': that.data.openId,
           'initial': 0,
+         
         }
       })
+   
     }
   },
     

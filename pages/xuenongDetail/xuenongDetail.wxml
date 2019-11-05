@@ -1,0 +1,42 @@
+<view class='xuenongDetail' wx:for="{{xuenonglist}}">
+  <view class='maijia-info'>
+    <view class='m-info2'>
+      <view class='biaoti'>{{item.name}}</view>
+      <view class='fabu-info'>{{item.gmtCreated}}{{space}}{{space}}发布于{{space}}{{item.location}}</view>
+    </view>
+  </view>
+  <view class='money'>
+    <view class='m-info'>
+      <view>
+        <text class="fuhao">￥</text>
+        <text>{{item.cost}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='content'>
+    <view class='m-info3'>
+      <view class='xiaojieshao'>小介绍</view>
+      <view class='font'>
+        <text class="con">{{item.content}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='img'>
+    <image mode='aspectFit' src='{{item.contentPic}}'></image>
+  </view>
+  <view class='danbao'>
+    <view class='m-info2'>
+      <view class='m-con'>容纳人数：{{item.capacity}}人</view>
+      <view class='m-con'>学农天数：{{item.dayNum}}天</view>
+      <view class='m-con'>详细地址：{{item.address}}</view>
+      <view class='m-con'>时间跨度：{{item.span}}</view>
+    </view>
+  </view>
+  <view class='btn-con'>
+    <view class='btn' bindtap='buy' data-id='{{item.id}}' data-price='{{item.cost}}' data-name='{{item.title}}'>
+      <view>立即抢购</view>
+    </view>
+
+
+  </view>
+</view>

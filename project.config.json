@@ -13,12 +13,14 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.6.1",
-	"appid": "wx23096cc687c20adb",
-	"projectname": "%E9%93%BE%E5%86%9C",
+	"appid": "wx53ed442437f3d84f",
+	"projectname": "liannong2",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

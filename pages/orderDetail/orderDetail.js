@@ -5,8 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    orderId:null,
-    url: 'http://94.191.106.228:8080/Agriculture',
+    orderId:'',
+    url: 'https://www.sxscott.com/agriculture',
     item:[]
   },
 
@@ -15,6 +15,10 @@ Page({
    */
   onLoad: function (options) {
     console.log(options)
+    var userId = wx.getStorageSync('userinfo').accessToken;
+    this.setData({
+      openId: userId
+    })
       this.setData({
         orderId:options.orderId
       })
@@ -22,11 +26,13 @@ Page({
   },
   getOrderList: function () {
     var that = this;
+    console.log(that.data.orderId)
     wx.request({
       url: that.data.url + '/agro/getOrderList',
       method: 'post',
       data: {
         'key': that.data.orderId,
+         'openId':that.data.openId
       },
       header: {
         'content-type': 'application/json'

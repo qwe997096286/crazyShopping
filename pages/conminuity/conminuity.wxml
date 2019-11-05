@@ -1,5 +1,6 @@
-<view class='com-page'>
-  <view>
+<view class='zhanshi' wx:if='{{isshow2}}'><image mode='aspectFill'src='/images/suibian.JPG'></image></view>
+<view class='com-page' wx:if='{{isshow}}'>
+  <view  >
 
     <image src="../../images/rotating.png" class="img-plus-style" bindtap="torelease"></image>
   </view>
@@ -7,7 +8,7 @@
     <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
       <block wx:for="{{imgUrls}}">
         <swiper-item>
-          <image src="{{item}}" class="slide-image" />
+          <image src="{{item}}" mode='aspectFill' class="slide-image" />
         </swiper-item>
       </block>
     </swiper>
@@ -26,7 +27,7 @@
     </view>
     <view class='huati-content'>
       <view class='two-con'>
-        <view class='con1' bindtap='huaticon'>
+        <!-- <view class='con1' bindtap='huaticon'>
           <view class='img'><image src='{{url1}}'></image></view>
           <view class='font'>
             <view class='kuang'>
@@ -34,13 +35,13 @@
               <view class='font-neirong'>近日，网传谢霆锋...</view>
             </view>
           </view>
-        </view>
-        <view class='con1' bindtap='huaticon'>
-          <view class='img'><image src='{{url2}}'></image></view>
+        </view> -->
+        <view class='con1'  wx:for="{{huati}}" wx:key="*this" id="{{item.id}}" bindtap='huaticon'>
+          <view class='img'><image mode='aspectFill' src='{{item.imgurl}}'></image></view>
           <view class='font'>
             <view class='kuang'>
-              <view class='font-title'>古风言情小说脑部男主...</view>
-              <view class='font-neirong'>这组图的白敬亭是...</view>
+              <view class='font-title'><text>{{item.title}}</text></view>
+              <view class='font-neirong'><text>{{item.phrase}}</text></view>
             </view>
           </view>
         </view>

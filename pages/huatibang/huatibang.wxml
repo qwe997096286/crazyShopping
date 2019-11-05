@@ -1,0 +1,16 @@
+<view class='huati-page'>
+  <view class='content'>
+    <view class='con1' wx:for="{{huati}}" wx:key="*this" id="{{item.id}}" bindtap='huaticon'>
+    <view class='contain'>
+      <view class='img'><view><image  mode='aspectFill' src='{{item.imgurl}}'></image></view></view>
+      <view class='huati-con'>
+        <view class='title'><view><text>#</text><text>{{item.title}}</text><text>#</text></view></view>
+        <view class='duanyu'><view><text>{{item.phrase}}</text></view></view>
+        <view class='num'><view><text>{{item.brow}}</text><text>人已浏览</text></view></view>
+      </view>
+      <view class='paihang'><view class='image'>{{item.index}}</view></view>
+      </view>
+    </view>
+      <view wx:if="{{flag==true}}" class='Bottom'>没有更多话题了！</view>
+  </view>
+</view>

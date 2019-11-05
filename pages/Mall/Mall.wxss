@@ -91,11 +91,12 @@ color:#CACACA;
 .cont1{
 width: 90%;
 height: 200rpx;
-border-radius: 8px;
+border-bottom: solid 1rpx #e1e1e133;
 margin-top: 15rpx;
 display: flex;
 align-items: center;
 }
+
 .sj-logo{
   width: 30%;
   height: 80%;
@@ -115,6 +116,13 @@ align-items: center;
 .sj-name{
   font-weight: 600;
   font-size: 13px;
+  display: flex;
+  align-items: center;
+ 
+}
+.sj-name image{
+  height: 50rpx;
+  width: 50rpx;
 }
 .sj-xinyu{
   margin-top: 15rpx;
@@ -124,6 +132,8 @@ align-items: center;
 .xy-left{
   width: 80%;
   display: flex;
+  font-size: 20rpx;
+  color: #969696;
 }
 .xy-right{
   width: 20%;

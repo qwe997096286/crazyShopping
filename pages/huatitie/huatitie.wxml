@@ -1,0 +1,13 @@
+<view class='fatie-page'>
+  <view class='title'>
+    <input placeholder='加个标题呦~' bindinput="bindKeyInput" placeholder-style='color:rgba(0,0,0,0.2);font-size:35rpx' focus="true"></input>
+  </view>
+  <view class='content'>
+    <textarea bindinput="bindinput"  placeholder='{{huatititle}}'placeholder-style='font-size:30rpx;' focus="{{focus}}"></textarea> 
+  </view>
+  <view class='bottom'>
+    <view class='btn' bindtap='fabu'>
+      <view>发布</view>
+    </view>
+  </view>
+</view>

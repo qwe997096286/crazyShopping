@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    url: 'http://94.191.106.228:8080/Agriculture',
+    url: 'https://www.sxscott.com/agriculture',
 list:[],
 sjid:0,
 sjinfo:[],
@@ -14,7 +14,9 @@ dianming:'',
 shopName:'',
 shopId:'',
 fenlei:[],
-current_item:0
+current_item:0,
+
+leibie:1500
   },
   xiangqing:function(event){
     wx.navigateTo({
@@ -24,32 +26,15 @@ current_item:0
   white: function (e) {
     var that = this;
     let cuu = e.currentTarget.dataset.key;//获取index值
+    let con = e.currentTarget.dataset.id;//获取分类id
     console.log(cuu);
+    console.log(con)
     that.setData({
+      leibie:con,
       current_item: cuu
     })
-    wx.request({
-      url: that.data.url + '/agro/getGoodsTypeList', // 仅为示例，并非真实的接口地址
-      method: 'post',
-      data: {
-        shopId:that.data.sjid
-      },
-      header: {
-        'content-type': 'application/json' // 默认值
-      },
-      success(res) {
-        console.log(res.data.itemGoodsType);
-        var returnArr=[];
-        for (var i = 0; i < res.data.itemGoodsType.length; i++) {
-          returnArr.push(res.data.itemGoodsType[i].itemGoods);
-        }
-         console.log(returnArr)
-        //  that.setData({
-        //    spinfo: returnArr
-        //  })
-        //  console.log(that.data.spinfo);
-      }
-    })
+    
+   that.shangpin();
 
   },
   //分类栏
@@ -70,6 +55,10 @@ fenlei:function(){
        that.setData({
          fenlei: []
        })
+       that.setData({
+         leibie:res.data.itemGoodsType[0].id
+       })
+       console.log(that.data.leibie)
        var returnArr = that.data.fenlei;
  
       for (var i = 0; i < res.data.itemGoodsType.length; i++) {
@@ -80,33 +69,45 @@ fenlei:function(){
 
       that.setData({
       fenlei: returnArr
+      
      })
+     that.setData({
+       leibie: that.data.fenlei[0].id
+     })
+     console.log(that.data.leibie)
     }
   })
 },
 shangpin:function(){
 let that=this;
   console.log(that.data.sjid)
+  console.log(that.data.leibie)
   wx.request({
-    url: that.data.url +'/agro/getGoodsList', // 仅为示例，并非真实的接口地址
+    url: that.data.url +'/agro/getGoodsTypeList', // 仅为示例，并非真实的接口地址
     method: 'post',
     data: {
-      sid: that.data.sjid
+      shopId: parseInt(that.data.sjid),
+      goodsTypeId: parseInt(that.data.leibie) ,
+     
     },
     header: {
       'content-type': 'application/json' // 默认值
     },
     success(res) {
-      console.log(res.data.itemGoods);
-       var returnArr = that.data.spinfo;
-       for (var i = 0; i < res.data.itemGoods.length; i++) {
-        returnArr.push(res.data.itemGoods[i]);
-
-       }
-       console.log(returnArr)
+      console.log(res)
+       console.log(res.data.itemGoodsType[0].itemGoods);
        that.setData({
-         spinfo: returnArr
+         spinfo:[]
        })
+        var returnArr = that.data.spinfo;
+        for (var i = 0; i < res.data.itemGoodsType[0].itemGoods.length;i++) {
+          returnArr.push(res.data.itemGoodsType[0].itemGoods[i]);
+
+        }
+        console.log(returnArr)
+        that.setData({
+          spinfo: returnArr
+        })
         console.log(that.data.spinfo);
     }
   })
@@ -165,13 +166,24 @@ sjinfo:function(){
         { name: "爱美食,勤劳奉献,感恩顾客!" }]
 
     })
-    that.sjinfo();
-    // that.shangpin();
-    that.fenlei();
-    console.log(that.data.dianming);
     wx.setNavigationBarTitle({
       title: that.data.dianming
     })
+    that.sjinfo();
+   
+    that.fenlei();
+    wx.showLoading({
+      title: '加载中',
+    })
+
+    setTimeout(function () {
+      that.shangpin()
+      wx.hideLoading()
+    }, 2000)
+ 
+ 
+    console.log(that.data.dianming);
+   
     
 
   },
@@ -219,6 +231,7 @@ sjinfo:function(){
     })
 
     that.sjinfo();
+    that.fenlei();
     that.shangpin();
     wx.stopPullDownRefresh();
   },

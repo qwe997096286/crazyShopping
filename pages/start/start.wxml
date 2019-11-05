@@ -1,7 +1,7 @@
 <view class='start_box'>
 <view wx:if="{{canIUse}}" >
     <view class='header'>
-        <image src='https://s2.ax1x.com/2019/03/09/ApVch8.jpg'></image>
+        <image mode="aspectFill" src='https://s2.ax1x.com/2019/04/30/E8TuMF.md.jpg'></image>
         <view>启农</view>
     </view>
     <view class='content'>

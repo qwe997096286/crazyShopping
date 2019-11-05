@@ -25,7 +25,7 @@
       <view class='myMoney-text'>商家入驻</view>
       <view class='iconfont icon-you'></view>
     </view>
-    <view class='myMoney'  bindtap='toMyMoney'>
+    <view class='myMoney'  bindtap='toMyMoney' >
       <view class='iconfont icon-wodezichan0'></view>
       <view class='myMoney-text'>我的资产</view>
       <view class='iconfont icon-you'></view>

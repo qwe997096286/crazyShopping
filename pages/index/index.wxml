@@ -1,5 +1,45 @@
-<view class='index-page'>
-
+<!--pages/meishi/meishi-xiangqing/meishi-xiangqing.wxml-->
+<view wx:if='{{isshow2}}'>
+  <image class='img' mode='aspectFill' src='https://s2.ax1x.com/2019/04/26/EmdQTe.jpg'></image>
+  <view class='box'>
+    <view class='box-font'>绍兴</view>
+    <view class='box-font2'>当地特色</view>
+    <view class='box-font3'>
+      <view class='box-font3-a1'>
+        <view class='iconfont icon-icon-dingwei'></view>
+        <view class='box-font3-a1-b'>群贤中路22222222号浙江文理元培学院镜湖校区xxx幢</view>
+      </view>
+      <view class='box-font3-a2'>
+        <view class='box-font3-a2-box'>
+          <view class='iconfont icon-daohang'></view>
+          <view class='box-font3-a2-box-font'>导航</view>
+        </view>
+        <view class='box-font3-a2-box'>
+          <view class='iconfont icon-weibiaoti-'></view>
+          <view class='box-font3-a2-box-font'>电话</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='main'>
+    <view class='main-top'>
+      <view class='main-top-left'>农业介绍</view>
+    </view>
+    <view class="main-bottom">
+      <image class='img2' mode='aspectFill' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556262003502&di=ea811f5cb58927a9599beea64ecb06d5&imgtype=0&src=http%3A%2F%2Fbaike.ipa361.com%2Fuploads%2F201603%2F1458547600apT9NWyB.jpg'></image>
+      <view class='main-bottom-font'>农业（Agriculture）是利用动植物的生长发育规律，通过人工培育来获得产品的产业。农业属于第一产业，研究农业的科学是农学。农业的劳动对象是有生命的动植物，获得的产品是动植物本身。农业是提供支撑国民经济建设与发展的基础产业。</view>
+    </view>
+    <view class="main-bottom">
+      <image class='img2' mode='aspectFill' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556261983283&di=551ba11dede4bfba6f5e22f35e4957ab&imgtype=0&src=http%3A%2F%2Fmof.hainan.gov.cn%2Fhainan%2Fzhl%2F201812%2F332bfea4b640459e959fdb65714499e0%2Fimages%2F95fed82bb7084c90969a445ba93146ec.jpg'></image>
+      <view class='main-bottom-font'>农业为通过培育动植物生产食品及工业原料的产业。农业属于第一产业，研究农业的科学是农学。农业的劳动对象是有生命的动植物，获得的产品是动植物本身．我们把利用动物植物等生物的生长发育规律，通过人工培育来获得产品的各部门，统称为农业．农业是支撑国民经济建设与发展的基础产品。农业是人们利用动植物体的生活机能，把自然界的物质和能转化为人类需要的产品的生产部门。现阶段的农业分为植物栽培和动物饲养两大类。土地是农业中不可替代的在基本生产资料，劳动对象主要是有生命的动植物，生产时间与劳动时间不一致，受自然条件影响大，有明显的区域性和季节性。农业是人类衣食之源、生存之本，是一切生产的首要条件。它为国民经济其他部门提供粮食、副食品、工业原料、资金和出口物资。农村又是工业品的最大市场和劳动力的来源。</view>
+    </view>
+    <view class="main-bottom">
+      <image class='img2' mode='aspectFill' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556261951298&di=191c0447ef0bdecfed32a4ee86d6dcc0&imgtype=0&src=http%3A%2F%2Fimg2.ctoutiao.com%2Fuploads%2F2017%2F09%2F10%2Fedcf9a50b93679d854f8a3434a4f3c89.jpg'></image>
+      <view class='main-bottom-font'>有关中国农业起源的问题，是学术界十分关心的课题。中国考古学界几十年来一直把它作为一个重要的学术课题进行探索，在江淮河汉诸流域及广大地域内进行调查、发掘，发现了一批遗址，如广西桂林甑皮岩、江西万年仙人洞、河北武安磁山、河南新郑裴李岗、河北徐水南庄头、湖南澧县彭头山等地点。前两处遗址的年代距今约八、九千年。武安磁山遗址和新郑裴李岗遗址的年代，也比中原地区的仰韶文化年代要早，距今已有七八千年之久。其中最令人注目的是1986年在河北省徐水县发现的南庄头遗址。在发掘的60余平方米的范围内，发现了一条小灰沟和草木灰层，出土了兽骨、禽骨、鹿角、蚌、螺壳、木炭、石料，以及石器、骨角器、木板、木棒、夹沙红陶片等与居民生活有关的遗物。特别是作为谷物加工工具的石磨盘和石磨棒在遗址中出土，说明当时已有农作物栽培业出现。据碳14测定，它的年代为距今10510±u65297X10—9690±u65305X5年（未作校正）。它比磁山文化还早，甚至比江西万年仙人洞、广西桂林甑皮岩遗址还早千年之久。它是中国发现的新石器时代遗址中年代最早的一处，因此，它把中国农业起源的时间上推至万年以前。</view>
+    </view>
+  </view>
+</view>
+<view class='index-page' wx:if='{{isshow}}'>
   <view class='search' bindtap='toSearch'>
     <view class='search-main'>
       <view class='search-icon iconfont icon-sousuo'></view>
@@ -7,11 +47,11 @@
     </view>
   </view>
   <scroll-view scroll-y class='ver'>
-    <view class='guanggao'>
+    <view class='guanggao' wx:if='{{isshow}}'>
       <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
         <block wx:for="{{imgUrls}}">
           <swiper-item>
-            <image src="{{item.picture}}" class="slide-image" />
+            <image mode='aspectFill' src="{{item.picture}}" class="slide-image" />
           </swiper-item>
         </block>
       </swiper>
@@ -22,15 +62,15 @@
         <view class='index-body-icon'>
           <view class='index-body-icon-bg'>
             <view class='fenlei'>
-              <view class='fangkuai1' bindtap='vote' id="蔬果农场">
+              <view class='fangkuai1' bindtap='vote' id="蔬果农场" wx:if='{{isshow}}'>
                 <view class='secondfk1'>
                   <view class='f-cont'>
-                    <image src="/images/shucai.png"></image>
-                    <view>蔬果</view>
+                    <image src="/images/new.png"></image>
+                    <view>新品</view>
                   </view>
                 </view>
               </view>
-              <view class='fangkuai2' bindtap='vote' id="畜牧农场">
+              <view class='fangkuai2' bindtap='vote' id="畜牧农场" wx:if='{{isshow}}'>
                 <view class='secondfk2'>
                   <view class='f-cont'>
                     <image src="/images/shengxian.png"></image>
@@ -38,7 +78,7 @@
                   </view>
                 </view>
               </view>
-              <view class='fangkuai3' bindtap='vote' id="学农商品">
+              <view class='fangkuai3' bindtap='vote2' id="学农商品">
                 <view class='secondfk3'>
                   <view class='f-cont'>
                     <image src="/images/jiaoyu.png"></image>
@@ -46,7 +86,7 @@
                   </view>
                 </view>
               </view>
-              <view class='fangkuai4' bindtap='vote' id="旅游产业">
+              <view class='fangkuai4' bindtap='vote' id="旅游产业" wx:if='{{isshow}}'>
                 <view class='secondfk4'>
                   <view class='f-cont'>
                     <image src="/images/lyou.png"></image>
@@ -56,7 +96,7 @@
               </view>
             </view>
             <view class='fenlei'>
-              <view class='fangkuai5' bindtap='vote' id="畜牧农场">
+              <view class='fangkuai5' bindtap='vote' id="农庄农场">
                 <view class='secondfk5'>
                   <view class='f-cont'>
                     <image src="/images/xumu.png"></image>
@@ -64,7 +104,7 @@
                   </view>
                 </view>
               </view>
-              <view class='fangkuai6' bindtap='vote' id="散户商铺">
+              <view class='fangkuai6' bindtap='vote' id="散户商铺" wx:if='{{isshow}}'>
                 <view class='secondfk6'>
                   <view class='f-cont'>
                     <image src="/images/sanhu.png"></image>
@@ -72,7 +112,7 @@
                   </view>
                 </view>
               </view>
-              <view class='fangkuai7' bindtap='vote' id="聚点商铺">
+              <view class='fangkuai7' bindtap='vote' id="聚点商铺" wx:if='{{isshow}}'>
                 <view class='secondfk7'>
                   <view class='f-cont'>
                     <image src="/images/judian.png"></image>
@@ -80,7 +120,7 @@
                   </view>
                 </view>
               </view>
-              <view class='fangkuai8' bindtap='vote' id="其他商品">
+              <view class='fangkuai8' bindtap='vote' id="其他商品" wx:if='{{isshow}}'>
                 <view class='secondfk8'>
                   <view class='f-cont'>
                     <image src="/images/qita.png"></image>
@@ -101,31 +141,30 @@
         </view>
         <view class='nongchang'>
           <view class='nongchang_hot' bindtap='sp'>
-            <view class='nonchang_hot_title'>热门农场</view>
-            <view class='nonchang_hot_content'>附近最火农场</view>
-            <image src='/images/nongchanghot.png'></image>
+            <view class='nonchang_hot_title'>大牌直降</view>
+            <view class='nonchang_hot_content'>正品大牌直降千元，万元补贴</view>
+            <image mode='widthFix' src='http://img3m6.ddimg.cn/60/6/61881396-1_k_2.jpg'></image>
           </view>
           <view class="nonchang_new">
             <view class='nongchang_new-up' bindtap='sp'>
               <view class='nongchang_new_up_left'>
-                <view class='nongchang_new_up_title'>新店特惠</view>
-                <view class='nongchang_new_up_content'>尝尝新口味</view>
+                <view class='nongchang_new_up_title'>新鲜果蔬</view>
+                <view class='nongchang_new_up_content'>原产地直销</view>
               </view>
 
               <image src='/images/nongnew.png'></image>
             </view>
-            <view class='nongchang_down'>
-              <view class='nongchang_down_dangji' bindtap='sp'>
-                <view class='nongchang_down_dangji_title'>当季新品</view>
-                <view class='nongchang_down_dangji_content'>美味小吃</view>
-                <image src='/images/newxiaochi.jpg'></image>
+            <view class='tttm' bindtap='sp'>
+              <view class='nongchang_new_up_left'>
+                <view class='tttm-titile'>天天特卖</view>
+                <view class='tttm-content'>热销过万匡威1970s正品帆布鞋经典款</view>
               </view>
-              <view class='nongchang_down_zhuti' bindtap='sp'>
-                <view class='nongchang_down_zhuti_title'>主题活动</view>
-                <view class='nongchang_down_zhuti_content'>倾情上演</view>
-                <image src='/images/zhutihuodong.jpg'></image>
-              </view>
+
+              <image mode='widthFix' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572857230859&di=8a9a0174d461ae7115c1135aea547aae&imgtype=0&src=http%3A%2F%2Fdingyue.nosdn.127.net%2FVuDgM%3D1vwu4avepMYjFjhA6M7wfg3qVuI5puFzc5Q1GSA1523675433441compressflag.jpg'></image>
             </view>
+
+
+
           </view>
         </view>
         <!-- <view class='tuijian'>
@@ -152,6 +191,14 @@
                    
           </view>
         </view> -->
+  <view class='ycdp' bindtap='sp'>
+              <view class='nongchang_new_up_left'>
+                <view class='ycdp-titile'>原创店铺</view>
+                <view class='ycdp-content'>法式潮流休闲中长款风衣</view>
+              </view>
+
+              <image mode='widthFix' src='http://img1.imgtn.bdimg.com/it/u=2817448148,1761545715&fm=26&gp=0.jpg'></image>
+            </view>
         <view class='fujin'>
           <view class='fujin-title'>附近商家</view>
 

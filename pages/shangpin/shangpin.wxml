@@ -1,5 +1,5 @@
 <view class='index-page' wx:for="{{spinfo}}" wx:key="*this" id="{{item.id}}">
-<view class='pic'><image src="{{item.gimage}}"></image></view>
+<view class='pic'><image  mode='aspectFill' src="{{item.gimage}}"></image></view>
 <view class='spinfo'>
 <view class='title'><view class='zp'><view>招牌</view></view><view class='sp-title'><view class='font'>{{item.name}}</view></view></view>
 <view class='info'>
@@ -8,7 +8,7 @@
 </view>
 <view class='last'>
 <view class='money'><view class='fuhao'>￥</view><view class='qian'>{{item.price}}</view></view>
-<view class='btn' bindtap='qianggao'><view>立即抢购</view></view>
+<view class='btn' bindtap='buy'><view>立即抢购</view></view>
 </view>
 </view>
 <view class='tujin'><view class='t1'><view class='type'>服务</view><view class='leixing3'>链农专送</view><view class='leixing2'>|</view><view class='leixing'>仅支持外卖</view></view><view  class='iconfont icon-jinru t2'></view></view>

@@ -1,0 +1,150 @@
+/* pages/xuenong/xuenong.wxss */
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1551695799098'); /* IE9 */
+  src: url('iconfont.eot?t=1551695799098#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAALEAAsAAAAABngAAAJ3AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAqBBIEdATYCJAMICwYABCAFhG0HMBvDBciemjwpUpUEioZtY88vBsAQD09r7f3ZwUQiUTSrZBKNkkgQ21LSHSF5Ju//zuVvu7FCyIhAHUr+aXuUe2luiEKdUWN8fhNyE27CkQfcpogzTjfkzWi9AdfU/wXQQPKA5hIRFJUcCTiw6YC6cU22kYx8w9gFL/A8gVaT6kiHE3MWSJDZ0wLxpKsuSCh4ZZklmoXGhrVZvEGD5vQivwOv0ffjT0skkDQU7JKTx3EvDH3CSVE2/zc9BAT4CGhzAwqsA5m4aIweUQRjKFqjMWbBsQqDT/9VYBFHNQr219n57WAcip5J7EkeNT+BnHQvAPuTnkAaaV+hma91qVazJZbWqvdGBzCqw63l+u0lQd38rZekdhWl1JRrXfLB1dWBL5epWT7IUhpvchdTS9r6fy4/LrdKPwn3icnhY4Evy34HdgGqsngrdkFC8P6XHV2b/83JGXxEbiN3VWYYZgfNp7AFv0o8sCkbUtucsiZutCcLk6YmtGpFBTt7fU3VDdxXMjQbuDt7k4kMhWbzZKavo0GbDTRqtoNWayY3t+nDKSK3YNUeQOh2iqRTiUK3DzLTP9Fg0DcadYeCVlfRt2ebxdCTDji6BHqJe4noHhairlUkxYUmVCMBF89LI6YNuaEHSHNDUzkxiSHkSyww5tUWISihnAXJBLgMAwFGwpz50CMaNCHCPY2NtOlNDR4WhCQHOOQiIC/CbQmh82BCaNBZSKp83gSpIgJceEdZndcGcQa9d6JZg6YB5KQqNKjsUa4xzFO1EASKoDgmiJgAo1BAAEOEm0f5IA+hgTYhHNaj0WlHh6oattcEf6CQVWHrUzjDCo3PLGJEGAAA') format('woff2'),
+  url('iconfont.woff?t=1551695799098') format('woff'),
+  url('iconfont.ttf?t=1551695799098') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1551695799098#iconfont') format('svg'); /* iOS 4.1- */
+}
+@import '../../components/wuxfilterbar.wxss';  
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sousuo:before {
+  content: "\e637";
+}
+page{
+
+ 
+      background: #f5f5f5;
+}
+.search{
+  width: 100%;
+  height: 50rpx;
+  background: #67CB33;
+  padding-top: 15rpx;
+  padding-bottom:15rpx;
+}
+.search-main{
+  margin-left: 3%;
+  height: 100%;
+  width: 94%;
+  background: #fff;
+  border-radius: 25rpx;
+  display: flex;
+  justify-content: center;
+}
+.search-icon{
+  color: rgba(0, 0,0,0.5);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.icon-sousuo{
+  font-size: 30rpx;
+  color: #CACACA;
+
+}
+.search-main-text{
+  font-size: 25rpx;
+  line-height: 48rpx;
+  margin-left: 5rpx;
+  color: #CACACA;
+}
+.content{
+  width:100%;
+  display: flex;
+  justify-content: center;
+
+}
+.con1{
+  width: 95%;
+  margin-top: 10px;
+ 
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.trip{
+  width: 45%;
+  height: 180px;
+  background: white;
+  border-radius: 4px;
+  margin-top: 2%;
+  margin-left: 2.5%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+  
+}
+.img{
+  width: 100%;
+  height: 60%;
+  border-radius: 4px;
+ 
+}
+.img image{
+  width: 100%;
+  height: 100%;
+  
+}
+.biaoti{
+  width: 100%;
+  height: 10%;
+ 
+  font-size: 25rpx;
+font-family:  SimHei;
+
+  display: flex;
+  align-items: center;
+}
+.biaoti text{
+overflow: hidden;
+
+white-space:nowrap; 
+}
+.kaibanren text{
+  width: 35%;
+  overflow: hidden;
+
+white-space:nowrap; 
+}
+.money{
+   width: 100%;
+  height: 15%;
+
+  color: red;
+  font-size: 25rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.fuhao{
+  margin-right: 15rpx;
+  font-size: 20rpx;
+  margin-left: 10rpx;
+}
+.kaibanren{
+     width: 100%;
+  height: 10%;
+  margin-top: 10rpx;
+  display: flex;
+  align-items: center;
+  font-size: 20rpx;
+  justify-content: space-between;
+}
+
+.xinyoug{
+  margin-right: 15px;
+  color: #67CB33;
+   font-size: 20rpx;
+}
+.title{
+  margin-left: 10rpx;
+}

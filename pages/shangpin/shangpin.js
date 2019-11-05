@@ -5,11 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    url: 'http://94.191.106.228:8080/Agriculture',
+    url: 'https://www.sxscott.com/agriculture',
   spid:0,
   spinfo:[],
   openid:'',
   },
+
   spinfo:function(){
     let that = this;
     console.log(that.data.spid)
@@ -40,34 +41,39 @@ Page({
       }
     })
   },
-  qianggou:function(){
-    let that = this;
-    console.log(that.data.spid)
-    wx.request({
-      url: that.data.url +'/agro/createOrder', // 仅为示例，并非真实的接口地址
-      type: 'POST',
-      data: {
-        goodsId: that.data.spid,
-          
-      },
-      header: {
-        'content-type': 'application/json' // 默认值
-      },
-      success(res) {
-        console.log(res.data.itemGoods);
-        var returnArr = that.data.spinfo;
-        for (var i = 0; i < res.data.itemGoods.length; i++) {
-          returnArr.push(res.data.itemGoods[i]);
-
-        }
-        console.log(returnArr)
-        that.setData({
-          spinfo: returnArr
-        })
-        console.log(that.data.spinfo);
-      }
+  buy: function () {
+    wx.navigateTo({
+      url: '../daifukuan/daifukuan?id=' + this.data.spid,
     })
   },
+  // qianggou:function(){
+  //   let that = this;
+  //   console.log(that.data.spid)
+  //   wx.request({
+  //     url: that.data.url +'/agro/createOrder', // 仅为示例，并非真实的接口地址
+  //     type: 'POST',
+  //     data: {
+  //       goodsId: that.data.spid,
+          
+  //     },
+  //     header: {
+  //       'content-type': 'application/json' // 默认值
+  //     },
+  //     success(res) {
+  //       console.log(res.data.itemGoods);
+  //       var returnArr = that.data.spinfo;
+  //       for (var i = 0; i < res.data.itemGoods.length; i++) {
+  //         returnArr.push(res.data.itemGoods[i]);
+
+  //       }
+  //       console.log(returnArr)
+  //       that.setData({
+  //         spinfo: returnArr
+  //       })
+  //       console.log(that.data.spinfo);
+  //     }
+  //   })
+  // },
   /**
    * 生命周期函数--监听页面加载
    */
