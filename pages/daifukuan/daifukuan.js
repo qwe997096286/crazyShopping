@@ -5,13 +5,14 @@ Page({
   data: {
     url:'https://www.sxscott.com/agriculture',
     userId: null,
-    // goodsDetail: [{
-    //   'pic': '',
-    //   'name': '',
-    //   'price': 0,
-    //   'label': '',
-    //   'number': 1,
-    // }],
+    goodsDetail: [{
+      'pic': '',
+      'name': '',
+      'price': 0,
+      'label': '',
+      'number': 1,
+    }],
+    canPay: 1,
     addressList: [],
     isNeedAddress: null,
     addressId: '',
@@ -32,7 +33,7 @@ Page({
     sname:'',
     platUserInfoMap:{},
     orderId:'',
-    canPay: 1,
+    
   },
   onLoad: function (options) {
     var userId = wx.getStorageSync('userinfo').accessToken;

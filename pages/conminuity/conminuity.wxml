@@ -2,7 +2,7 @@
 <view class='com-page' wx:if='{{isshow}}'>
   <view  >
 
-    <image src="../../images/rotating.png" class="img-plus-style" bindtap="torelease"></image>
+    <image src="../../images/rotating2.png" class="img-plus-style" bindtap="torelease"></image>
   </view>
   <view class='guanggao'>
     <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">

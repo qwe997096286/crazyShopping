@@ -228,6 +228,16 @@ sjinfo:function(){
       sjinfo: [],
       spinfo: [],
       dianming: '',
+      list: [{
+
+        name: "爱美食,怎么能不来启农呢!"
+
+      },
+
+      { name: "爱美食,欢迎来到我们的店铺!" },
+
+      { name: "爱美食,勤劳奉献,感恩顾客!" }]
+
     })
 
     that.sjinfo();

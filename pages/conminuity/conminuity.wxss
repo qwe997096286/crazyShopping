@@ -230,7 +230,7 @@ justify-content: flex-start;
   justify-content: space-between;
   align-items: center;
   font-size: 28rpx;
-  color: #ffe992;
+  color: #e7bd16;
 }
 .left{
   width: 40%;
@@ -317,7 +317,7 @@ white-space:nowrap;
 .zd{
   width: 60rpx;
   height: 50%;
-  background: #67CB33;
+  background: #e7bd16;
   display: flex;
   margin-left: 30rpx;
   justify-content: center;
