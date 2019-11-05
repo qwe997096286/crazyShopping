@@ -17,7 +17,7 @@
     <view class='huati-title'>
       <view class='title-con'>
         <view class='left'>
-          <view>推荐的话题</view>
+          <view>推荐话题</view>
         </view>
         <view class='right' bindtap='allhuati'>
           <view>全部</view>

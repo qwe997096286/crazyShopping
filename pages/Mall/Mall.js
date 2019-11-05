@@ -416,10 +416,10 @@ Page({
     let key=options.id;
     switch (key) {
     
-      case '蔬果农场':
+      case '新品':
       
         that.setData({
-          leixing: '蔬果',
+          leixing: '新品',
            key: key,
         })
         break;
