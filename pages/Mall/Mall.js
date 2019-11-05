@@ -435,10 +435,10 @@ Page({
            key: key
         })
         break;
-      case '学农商品':
+      case '家居商品':
         
         that.setData({
-          leixing: '学农',
+          leixing: '家居',
           key: key
         })
         break;

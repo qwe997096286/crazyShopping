@@ -635,9 +635,9 @@ dianjia:function(event){
         url: '../Mall/Mall?id=旅游产业'
       })
     }
-    else if (key == "学农商品") {
+    else if (key == "家居商品") {
       wx.navigateTo({
-        url: '../Mall/Mall?id=学农商品'
+        url: '../Mall/Mall?id=家居商品'
       })
     }
     else if (key == "散户商铺") {

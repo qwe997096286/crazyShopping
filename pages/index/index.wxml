@@ -78,7 +78,7 @@
                   </view>
                 </view>
               </view>
-              <view class='fangkuai3' bindtap='vote2' id="学农商品">
+              <view class='fangkuai3' bindtap='vote' id="家居商品">
                 <view class='secondfk3'>
                   <view class='f-cont'>
                     <image src="/images/jj.png"></image>
