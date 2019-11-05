@@ -867,7 +867,7 @@ dianjia:function(event){
           latitude1: latitude,
           longitude1: longitude,
         })
-        // vm.funjin();
+        vm.funjin();
         var speed = res.speed
         var accuracy = res.accuracy;
         vm.getLocal(latitude, longitude)

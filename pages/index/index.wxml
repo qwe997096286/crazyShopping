@@ -73,24 +73,24 @@
               <view class='fangkuai2' bindtap='vote' id="畜牧农场" wx:if='{{isshow}}'>
                 <view class='secondfk2'>
                   <view class='f-cont'>
-                    <image src="/images/shengxian.png"></image>
-                    <view>畜牧</view>
+                    <image src="/images/fs.png"></image>
+                    <view>服饰</view>
                   </view>
                 </view>
               </view>
               <view class='fangkuai3' bindtap='vote2' id="学农商品">
                 <view class='secondfk3'>
                   <view class='f-cont'>
-                    <image src="/images/jiaoyu.png"></image>
-                    <view>学农</view>
+                    <image src="/images/jj.png"></image>
+                    <view>家居</view>
                   </view>
                 </view>
               </view>
               <view class='fangkuai4' bindtap='vote' id="旅游产业" wx:if='{{isshow}}'>
                 <view class='secondfk4'>
                   <view class='f-cont'>
-                    <image src="/images/lyou.png"></image>
-                    <view>旅游</view>
+                    <image src="/images/gs.png"></image>
+                    <view>果蔬</view>
                   </view>
                 </view>
               </view>
@@ -99,24 +99,24 @@
               <view class='fangkuai5' bindtap='vote' id="农庄农场">
                 <view class='secondfk5'>
                   <view class='f-cont'>
-                    <image src="/images/xumu.png"></image>
-                    <view>农庄</view>
+                    <image src="/images/sm.png"></image>
+                    <view>数码</view>
                   </view>
                 </view>
               </view>
               <view class='fangkuai6' bindtap='vote' id="散户商铺" wx:if='{{isshow}}'>
                 <view class='secondfk6'>
                   <view class='f-cont'>
-                    <image src="/images/sanhu.png"></image>
-                    <view>散户</view>
+                    <image src="/images/yd.png"></image>
+                    <view>运动</view>
                   </view>
                 </view>
               </view>
               <view class='fangkuai7' bindtap='vote' id="聚点商铺" wx:if='{{isshow}}'>
                 <view class='secondfk7'>
                   <view class='f-cont'>
-                    <image src="/images/judian.png"></image>
-                    <view>聚点</view>
+                    <image src="/images/sx.png"></image>
+                    <view>生鲜</view>
                   </view>
                 </view>
               </view>

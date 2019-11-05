@@ -18,7 +18,7 @@
 .items{
   width: 100%;
   height: 100rpx;
-
+  border-bottom:solid 1px #e1e1e1e1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,8 +27,10 @@
   background: rgba(247,248,250);
 }
 .selected{
-  background-color: white;
-  color: rgb(247, 181, 120);
+ 
+  /* color: rgb(247, 181, 120); */
+  color: #ffffff;
+  background-color:#ec9782;
 
 }
 
@@ -70,7 +72,7 @@ body{
 }
 /* 标题 */
 .dianpu-info{
- background: black;
+ /* background: rgba(0, 0, 0, 0.342); */
   width: 100%;
   height: 140rpx;
 
@@ -146,7 +148,7 @@ body{
   text-align: center;
 }
 .swiper_lab{
-    background: rgba(0,0, 0, 0.1);
+    /* background: rgba(0,0, 0, 0.1); */
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
  width: 85%;
@@ -210,10 +212,10 @@ letter-spacing: 2px;
   width: 100%;
   height: 35rpx;
   display: flex;
-  justify-content: flex-start;
+  justify-content:center;
   font-size: 30rpx;
   font-weight: 600;
-  margin-left: 15rpx;
+
   margin-top: 30rpx;
   padding-bottom: 20rpx;
   border-bottom: 1px solid rgba(0,0, 0, 0.1);
@@ -230,7 +232,8 @@ letter-spacing: 2px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10rpx;
+  
+
 }
 .cont{
   width: 100%;

@@ -1,16 +1,46 @@
 <view class='index-page' wx:for="{{spinfo}}" wx:key="*this" id="{{item.id}}">
-<view class='pic'><image  mode='aspectFill' src="{{item.gimage}}"></image></view>
-<view class='spinfo'>
-<view class='title'><view class='zp'><view>招牌</view></view><view class='sp-title'><view class='font'>{{item.name}}</view></view></view>
-<view class='info'>
-<view class='ys'>月售{{item.sellOut}}</view>
-<view class='peisong'>配送小哥飞速送达哦！</view>
-</view>
-<view class='last'>
-<view class='money'><view class='fuhao'>￥</view><view class='qian'>{{item.price}}</view></view>
-<view class='btn' bindtap='buy'><view>立即抢购</view></view>
-</view>
-</view>
-<view class='tujin'><view class='t1'><view class='type'>服务</view><view class='leixing3'>链农专送</view><view class='leixing2'>|</view><view class='leixing'>仅支持外卖</view></view><view  class='iconfont icon-jinru t2'></view></view>
-<view class='spxiangqing'><view class='tit'>商品详情</view><view class='neirong'>{{item.content}}</view></view>
+  <view class='pic'>
+    <image mode='aspectFill' src="{{item.gimage}}"></image>
+  </view>
+  <view class='spinfo'>
+    <view class='title'>
+      <view class='zp'>
+        <view>招牌</view>
+      </view>
+      <view class='sp-title'>
+        <view class='font'>{{item.name}}</view>
+      </view>
+      <view class='hotout'>
+      <image src='../../images/fire.png'></image>
+        限时折扣，大牌直降
+      </view>
+    </view>
+    <view class='info'>
+      <view class='ys'>月售{{item.sellOut}}</view>
+      <view class='peisong'>下单即享折扣，现时降价</view>
+    </view>
+    <view class='last'>
+      <view class='money'>
+        <view class='fuhao'>￥</view>
+        <view class='qian'>{{item.price}}</view>
+      </view>
+      <view class='check'>下单前请检查地址与联系方式</view>
+      <view class='btn' bindtap='buy'>
+        <view>立即抢购</view>
+      </view>
+    </view>
+  </view>
+  <view class='tujin'>
+    <view class='t1'>
+      <view class='type'>服务</view>
+      <view class='leixing3'>链农专送</view>
+      <view class='leixing2'>|</view>
+      <view class='leixing'>仅支持外卖</view>
+    </view>
+    <view class='iconfont icon-jinru t2'></view>
+  </view>
+  <view class='spxiangqing'>
+    <view class='tit'>商品详情</view>
+    <view class='neirong'>{{item.content}}</view>
+  </view>
 </view>
