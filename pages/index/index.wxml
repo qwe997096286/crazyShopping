@@ -70,7 +70,7 @@
                   </view>
                 </view>
               </view>
-              <view class='fangkuai2' bindtap='vote' id="畜牧农场" wx:if='{{isshow}}'>
+              <view class='fangkuai2' bindtap='vote' id="服饰商品" wx:if='{{isshow}}'>
                 <view class='secondfk2'>
                   <view class='f-cont'>
                     <image src="/images/fs.png"></image>
@@ -86,7 +86,7 @@
                   </view>
                 </view>
               </view>
-              <view class='fangkuai4' bindtap='vote' id="旅游产业" wx:if='{{isshow}}'>
+              <view class='fangkuai4' bindtap='vote' id="果蔬商品" wx:if='{{isshow}}'>
                 <view class='secondfk4'>
                   <view class='f-cont'>
                     <image src="/images/gs.png"></image>
@@ -96,7 +96,7 @@
               </view>
             </view>
             <view class='fenlei'>
-              <view class='fangkuai5' bindtap='vote' id="农庄农场">
+              <view class='fangkuai5' bindtap='vote' id="数码商品">
                 <view class='secondfk5'>
                   <view class='f-cont'>
                     <image src="/images/sm.png"></image>
@@ -104,7 +104,7 @@
                   </view>
                 </view>
               </view>
-              <view class='fangkuai6' bindtap='vote' id="散户商铺" wx:if='{{isshow}}'>
+              <view class='fangkuai6' bindtap='vote' id="运动商品" wx:if='{{isshow}}'>
                 <view class='secondfk6'>
                   <view class='f-cont'>
                     <image src="/images/yd.png"></image>
@@ -112,7 +112,7 @@
                   </view>
                 </view>
               </view>
-              <view class='fangkuai7' bindtap='vote' id="聚点商铺" wx:if='{{isshow}}'>
+              <view class='fangkuai7' bindtap='vote' id="生鲜商品" wx:if='{{isshow}}'>
                 <view class='secondfk7'>
                   <view class='f-cont'>
                     <image src="/images/sx.png"></image>

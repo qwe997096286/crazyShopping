@@ -620,19 +620,9 @@ dianjia:function(event){
         url: '../Mall/Mall?id=新品'
       })
     }
-    else if (key == "畜牧农场") {
+    else if (key == "服饰商品") {
       wx.navigateTo({
-        url: '../Mall/Mall?id=畜牧农场'
-      })
-    }
-    else if (key == "农庄农场") {
-      wx.navigateTo({
-        url: '../Mall/Mall?id=农庄农场'
-      })
-    }
-    else if (key == "旅游产业") {
-      wx.navigateTo({
-        url: '../Mall/Mall?id=旅游产业'
+        url: '../Mall/Mall?id=服饰商品'
       })
     }
     else if (key == "家居商品") {
@@ -640,14 +630,24 @@ dianjia:function(event){
         url: '../Mall/Mall?id=家居商品'
       })
     }
-    else if (key == "散户商铺") {
+    else if (key == "果蔬商品") {
       wx.navigateTo({
-        url: '../Mall/Mall?id=散户商铺'
+        url: '../Mall/Mall?id=果蔬商品'
       })
     }
-    else if (key == "聚点商铺") {
+    else if (key == "数码商品") {
       wx.navigateTo({
-        url: '../Mall/Mall?id=聚点商铺'
+        url: '../Mall/Mall?id=数码商品'
+      })
+    }
+    else if (key == "运动商品") {
+      wx.navigateTo({
+        url: '../Mall/Mall?id=运动商品'
+      })
+    }
+    else if (key == "生鲜商品") {
+      wx.navigateTo({
+        url: '../Mall/Mall?id=生鲜商品'
       })
     }
     else if (key == "其他商品") {

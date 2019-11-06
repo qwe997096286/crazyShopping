@@ -423,15 +423,15 @@ Page({
            key: key,
         })
         break;
-      case '畜牧农场':
+      case '服饰商品':
         that.setData({
-          leixing: '畜牧',
+          leixing: '服饰',
            key: key,
         })
         break;
-      case '旅游产业':
+      case '果蔬商品':
         that.setData({
-          leixing: '旅游',
+          leixing: '果蔬',
            key: key
         })
         break;
@@ -442,22 +442,22 @@ Page({
           key: key
         })
         break;
-      case '农庄农场':
+      case '数码商品':
         that.setData({
-          leixing: '农庄',
+          leixing: '数码',
           key: key,
         })
         break;
-      case '聚点商铺':
+      case '运动商品':
         that.setData({
-          leixing: '聚点',
+          leixing: '运动',
           key: key
         })
         break;
-      case '散户商铺':
+      case '生鲜商品':
       
         that.setData({
-          leixing: '散户',
+          leixing: '生鲜',
           key: key,
         })
         break;
