@@ -199,7 +199,7 @@ form {
   text-align: center;
   height: 100%;
   line-height: 100rpx;
-  background-color: #67CB33;
+  background-color: #e9bb04;
   font-size: 32rpx;
   color: #fff;
   border-radius: 0;
@@ -216,6 +216,6 @@ form {
 }
 
 .jiesuan-box .total {
-  color: #67CB33;
+  color: #e9bb04;
   text-align: right;
 }

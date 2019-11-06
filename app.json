@@ -53,7 +53,7 @@
   },
   "tabBar": {
     "color": "#CECECE",
-    "selectedColor": "#67CB33",
+    "selectedColor": "#e9bb04",
     "list": [
       {
         "selectedIconPath": "images/首页1.png",
