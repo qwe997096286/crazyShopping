@@ -10,6 +10,7 @@
           <view class='juli-font line'>|</view>
           <view class='jisu iconfont icon-jisutuikuan'></view>
           <view class='juli-font'>客户满意度高达100%</view>
+          <view class="mask"></view>
         </view>
       <view class='gonggao'><view class='guanggao'><view class='zi'>公告:</view><swiper class="swiper_lab" vertical="true" autoplay="true" circular="true" interval="3000">
  
