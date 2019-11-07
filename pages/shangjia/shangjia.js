@@ -157,7 +157,7 @@ sjinfo:function(){
       sjid:options.id,
       list: [{
 
-        name: "爱美食,怎么能不来启农呢!"
+        name: "爱美食,怎么能不来疯鸟shopping呢!"
 
       },
 

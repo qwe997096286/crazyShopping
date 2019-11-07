@@ -49,6 +49,6 @@ border-bottom: 1rpx solid #dddcdc;
    position: absolute;
    right: 30rpx;
    text-align: center;
-   font-size: 30rpx;
+   font-size: 34rpx;
    z-index: 99;
 }
