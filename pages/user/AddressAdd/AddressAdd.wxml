@@ -11,7 +11,7 @@
     <view class='Mess-item'>
       <view class='title'>地址</view>
       <input class='text'  placeholder='请填写收货人地址' value='{{address}}'></input>
-      <button class='dizhi' bindtap='dizhi'  style="display:{{buttonShow}}" >点击选择</button>
+      <button class='dizhi' bindtap='dizhi'  style="" >点击选择</button>
     </view>
   </view>
   <view class='bottomBtn'>
