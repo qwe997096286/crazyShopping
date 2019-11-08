@@ -98,7 +98,11 @@ Page({
       },
       success(res) {
         console.log(res.data)
+<<<<<<< HEAD
         if (res.data == 1 && false) {
+=======
+        if (res.data == 1 && 1==2) {
+>>>>>>> 21da2d36abf47172b4d4fa35eb885bf279770589
         that.setData({
           isshow:false,
           isshow2:true,

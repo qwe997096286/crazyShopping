@@ -1,59 +1,65 @@
 <view class='my'>
   <view class='userInfo'>
-  <view wx:if="{{userInfo}}">
-    <view class='topColor'></view>
-    <image class='userinfo-avator' mode='aspectFill' src='{{userInfo.headimgurl}}'></image>
-    <view class='userinfo-name'>{{userInfo.userName}}</view>
-    <view class='userinfo-phone'>{{number==null?userInfo.phone:number}}</view>
+    <view wx:if="{{userInfo}}">
+      <view class='topColor'></view>
+      <image class='userinfo-avator' mode='aspectFill' src='{{userInfo.headimgurl}}'></image>
+      <view class='userinfo-name'>{{userInfo.userName}}</view>
+      <view class='userinfo-phone'>{{number==null?userInfo.phone:number}}</view>
     </view>
   </view>
   <block wx:if="{{show}}">
-  <view  class='getPhone_box'>
+    <view class='getPhone_box'>
       <view class='form'>
         <view class='bandTitle'>请绑定你的手机号码</view>
         <view class='bandLeft'>
-         <view class='phone'>手机号码</view>
-         <input maxlength='11' class='bandRight' bindinput='number'></input>
+          <view class='phone'>手机号码</view>
+          <input maxlength='11' class='bandRight' bindinput='number'></input>
         </view>
-        <button class='bindPhone' bindtap='sumbit' type='primary'>确认绑定</button> 
+        <button class='bindPhone' bindtap='sumbit' type='primary'>确认绑定</button>
       </view>
-   </view>
-</block>
-  <view class='my-list'>
-  <view class='storeEnter' bindtap='toStoreEnter'>
-      <view class='iconfont icon-shangjiaruzhu'></view>
-      <view class='myMoney-text'>商家入驻</view>
-      <view class='iconfont icon-you'></view>
     </view>
-    <view class='myMoney'  bindtap='toMyMoney' >
-      <view class='iconfont icon-wodezichan0'></view>
+  </block>
+  <view class='my-list'>
+    <view class='storeEnter' bindtap='toStoreEnter'>
+      <view class='iconfont icon-shangjia'></view>
+      <view class='myMoney-text'>商家入驻</view>
+      <view class='iconfont icon-gengduo'></view>
+    </view>
+    <view class='myMoney' bindtap='toMyMoney'>
+      <view class='iconfont icon-huiyuan'></view>
+      <view class='myMoney-text'>会员注册</view>
+      <view class='iconfont  icon-gengduo'></view>
+    </view>
+    <view class='myMoney' bindtap='toMyMoney'>
+      <view class='iconfont icon-qian'></view>
       <view class='myMoney-text'>我的资产</view>
-      <view class='iconfont icon-you'></view>
+      <view class='iconfont icon-gengduo'></view>
     </view>
     <view class='myCard' bindtap='toMyCard'>
-      <view class='iconfont icon-cebianlan_wodeqiajuan'></view>
+      <view class='iconfont icon-qiaquan'></view>
       <view class='myOrder-text'>我的卡劵</view>
-      <view class='iconfont icon-you'></view>
+      <view class='iconfont icon-gengduo'></view>
     </view>
     <view class='myAddress' bindtap='toAddress'>
-      <view class='iconfont icon-shouhuodizhi'></view>
+      <view class='iconfont icon-shouhuo'></view>
       <view class='myZuJi-text'>收货地址</view>
-      <view class='iconfont icon-you'></view>
+      <view class='iconfont icon-gengduo'></view>
     </view>
     <view class='newsCenter' bindtap='toNewsEnter'>
-      <view class='iconfont icon-xiaoxizhongxin'></view>
+      <view class='iconfont icon-xiaoxi-'></view>
       <view class='newsCenter-text'>消息中心</view>
-      <view class='iconfont icon-you'></view>
+      <view class='iconfont icon-gengduo'></view>
     </view>
-    <button class='keFu' open-type="contact"> 
+    <view class='keFu' open-type="contact">
       <view class='iconfont icon-kefu'></view>
       <view class='keFu-text'>客服中心</view>
-      <view class='iconfont icon-you'></view>
-    </button>
+      <view class='iconfont  icon-gengduo'></view>
+    </view>
+    <!-- <button></button> -->
     <view class='Help' bindtap='toideaBack'>
-      <view class='iconfont icon-my-help'></view>
+      <view class='iconfont icon-yijianfankui'></view>
       <view class='Help-text'>意见反馈</view>
-      <view class='iconfont icon-you'></view>
+      <view class='iconfont  icon-gengduo'></view>
     </view>
   </view>
 </view>
