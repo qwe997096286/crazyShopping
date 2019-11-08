@@ -47,51 +47,55 @@ Page({
   },
   //获取收藏的列表
   getCollectionList: function() {
-    // var that = this;
-    // var pageNo = this.data.pageNo;
-    // var pageSize = this.data.pageSize;
-    // var status = this.data.status;
-    // let infoOpt = {
-    //   url: '/secondary/collectionList',
-    //   type: 'GET',
-      // data: {
-      //   status: status,
-      //   pageNo: pageNo,
-      //   pageSize: pageSize
-      // },
-      // header: {
-      //   'content-type': 'application/json',
-      //   'authorization': wx.getStorageSync('userinfo').authorization
-      // },
-    // }
-    // let infoCb = {}
-    // infoCb.success = function(res) {
-    //   var goodsNewList = res.items;
-    //   var goodsList = that.data.goodsList;
-    //   if (goodsNewList.length == 0 && goodsList.length != 0) {
-    //     that.setData({
-    //       isBottom: true
-    //     })
-    //     wx.hideLoading();
-    //   } else {
-    //     for (var i = 0; i < goodsNewList.length; i++) {
-    //       var arr = goodsNewList[i].goodsImg;
-    //       goodsNewList[i]['goodsImg'] = JSON.parse(arr);
-    //       goodsList.push(goodsNewList[i]);
-    //     }
-    //     console.log(goodsList)
-    //     that.setData({
-    //       goodsList: goodsList,
-    //     })
-    //     wx.hideLoading();
-    //   }
-    // }
-    // infoCb.beforeSend = () => {
-    //   wx.showLoading({
-    //     title: '加载中',
-    //   })
-    // }
-    // sendAjax(infoOpt, infoCb, () => {});
+    var that = this;
+    var pageNo = this.data.pageNo;
+    var pageSize = this.data.pageSize;
+    // var status = this.pageParam.status;
+    var openid = wx.getStorageSync("userinfo").accessToken;
+    console.log(openid);
+    let infoOpt = {
+      url: '/cart/cartList',
+      type: 'POST',
+      data: {
+        // status: status,
+        openID:openid,
+        pageNo: pageNo,
+        pageSize: pageSize
+      },
+      header: {
+        'content-type': 'application/json',
+        // 'authorization': wx.getStorageSync('userinfo').authorization
+      },
+    }
+    let infoCb = {}
+    infoCb.success = function(res) {
+      console.log(res);
+      var goodsNewList = res.list;
+      var goodsList = that.data.goodsList;
+      if (goodsNewList.length == 0 && goodsList.length != 0) {
+        that.setData({
+          isBottom: true
+        })
+        wx.hideLoading();
+      } else {
+        for (var i = 0; i < goodsNewList.length; i++) {
+          var arr = goodsNewList[i].goodsImg;
+          // goodsNewList[i]['gimage'] = JSON.parse(arr);
+          goodsList.push(goodsNewList[i]);
+        }
+        console.log(goodsList)
+        that.setData({
+          goodsList: goodsList,
+        })
+        wx.hideLoading();
+      }
+    }
+    infoCb.beforeSend = () => {
+      wx.showLoading({
+        title: '加载中',
+      })
+    }
+    sendAjax(infoOpt, infoCb, () => {});
   },
   //跳转详情
   toDetail: function(e) {

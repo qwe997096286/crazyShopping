@@ -9,30 +9,30 @@
       </view>
     </button>
   </form>
-  <view class='wantList' data-id='{{item.id}}' bindtap='toDetail' wx:key="key">
-    <!-- wx:for="{{goodsList}}" -->
+  <view class='wantList' wx:for="{{goodsList}}" data-id='{{item.id}}' bindtap='toDetail' wx:key="key">
+    
     <view class='detail-head'>
-      <image class='detail-head-img' mode='aspectFill' src='{{item.headImgUrl}}'></image>
+      <image class='detail-head-img' mode='aspectFill' src='{{item.simage}}'></image>
       <view class='detail-head-mes'>
-        <view class='detail-head-nickname'>123</view>
-        <!-- {{item.userName}} -->
-        <view class='detail-head-pos'>12346</view>
+        <view class='detail-head-nickname'>{{item.shopName}}</view>
+        
+        <!-- <view class='detail-head-pos'>12346</view> -->
         <!-- {{item.postion}} -->
       </view>
-      <view class='detail-head-goodsWay'>123456</view>
+      <!-- <view class='detail-head-goodsWay'>123456</view> -->
       <!-- {{item.goodsWay}} -->
     </view>
     <view class='goodsPrice'>
       <text class='goodsPrice-flag'>￥</text>
       <text class='goodsPrice-sellprice'>{{item.price}}</text>
       <text class='goodsPrice-primetext'>原价:</text>
-      <text class='goodsPrice-primeprice'>￥{{item.oldPrice}}</text>
-
+      <text class='goodsPrice-primeprice'>￥{{item.price*2}}</text>
     </view>
     <view class='goodsImg'>
-      <image wx:for="{{item.goodsImg}}" class='goodsImg-img' src='{{item}}' data-img='{{item}}' mode='aspectFill' wx:key="key"></image>
+      <image class='goodsImg-img' src='{{item.gimage}}' data-img='{{item.gimage}}' mode='aspectFill' wx:key="key"></image>
+      <!-- wx:for="{{item.goodsImg}}"  -->
     </view>
-    <view class='goodsTitle'>亿亿亿亿</view>
+    <view class='goodsTitle'>{{item.goodsName}}</view>
     <view class='btn'>
     <button class='btn1'>取消</button>
         <button class='btn1'>付款</button>

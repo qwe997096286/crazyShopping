@@ -98,8 +98,9 @@
 
 .goodsPrice {
   height: 50rpx;
-  margin-left: 5%;
+  margin-left: 50%;
   margin-top: 10rpx;
+  bottom: 0;
   vertical-align: bottom;
   position: relative;
   display: flex;
@@ -120,20 +121,19 @@
 .goodsPrice-primetext {
   margin-left: 15rpx;
   color: #a7a7a7;
-  font-size: 20rpx;
+  font-size: 25rpx;
   /* font-weight: bold; */
 }
 
 .goodsPrice-primeprice {
   color: #a7a7a7;
-  font-size: 20rpx;
+  font-size: 25rpx;
   /* font-weight: bold; */
 }
-
 .goodsImg {
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: 15rpx;
+  margin-top: -65rpx;
   display: flex;
   flex-wrap: wrap;
 }
