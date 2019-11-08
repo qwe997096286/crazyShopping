@@ -1,8 +1,8 @@
 <view class='start_box'>
 <view wx:if="{{canIUse}}" >
     <view class='header'>
-        <image mode="aspectFill" src='https://s2.ax1x.com/2019/04/30/E8TuMF.md.jpg'></image>
-        <view>启农</view>
+        <image mode="aspectFill" src='http://www.sxscott.com/Agriculture/Uploads/Agricultureimg/siteHead/siteHead_20191107192405001_76557364.png'></image>
+        <view>疯鸟Shopping</view>
     </view>
     <view class='content'>
         <view>申请获取以下权限:</view>

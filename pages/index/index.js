@@ -98,7 +98,7 @@ Page({
       },
       success(res) {
         console.log(res.data)
-        if (res.data == 1) {
+        if (res.data == 1 && false) {
         that.setData({
           isshow:false,
           isshow2:true,
