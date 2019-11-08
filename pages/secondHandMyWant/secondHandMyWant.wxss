@@ -102,6 +102,7 @@
   margin-top: 10rpx;
   vertical-align: bottom;
   position: relative;
+  display: flex;
 }
 
 .goodsPrice-flag {
@@ -187,4 +188,20 @@
   top: 50%;
   margin-top: -50rpx; /* 高度的一半 */
   margin-left: -50rpx;
+}
+.btn{
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 300rpx;
+  margin-top: -50rpx;
+}
+.btn1 {
+  width: 150rpx;
+  font-size: 26rpx;
+  height: 70rpx;
+  margin-top: -20rpx;
+  background-color: rgba(222, 184, 135, 0.596);
+  color: white;
+
 }
