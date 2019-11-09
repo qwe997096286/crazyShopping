@@ -10,6 +10,7 @@ Page({
     isBottom: false //是否到底
   },
   onLoad: function(options) {
+    this.getCollectionList();
   },
   onShow: function () {
     // if (wx.getStorageSync('userinfo').isbound == 1) {
@@ -31,6 +32,7 @@ Page({
     //   })
     //   this.getCollectionList();
     // }
+    getCollectionList();
    },
   //单击导航栏
   clickMenu: function(e) {
