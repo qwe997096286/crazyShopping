@@ -7,11 +7,13 @@ Page({
   data: {
     items: [{
         name: 'wx',
-        value: '微信'
+        value: '微信',
+        checked:'true'
       },
       {
         name: 'zfb',
-        value: '支付宝'
+        value: '支付宝',
+        checked: 'false'
       },
     ],
     items1: [{
@@ -19,7 +21,7 @@ Page({
         value: '1',
         prise: '15',
         priseadd: '9.8',
-        checked: "false"
+        checked: "true"
       },
       {
         name: '季卡',
@@ -42,21 +44,25 @@ Page({
   chageClass: function(e) {
     console.log(e);
   },
+  changevip:function(e){
+    wx.showToast({
+
+      title: '充值成功！',
+
+    })
+  },
   radioChange: function(e) {
     console.log('radio发生change事件，携带value值为：', e.detail.value)
     var index = e.detail.value;
     console.log(index - 1);
+
     var change = this.data.items1;
     for (var i = 0; i <= 2; i++) {
       change[i].checked = false;
     }
-    var flag=1;
-    if(flag==1){
-      change[1].checked = true;
-      flag=2;
-    }else{
+
       change[index - 1].checked = true;
-    }
+
       
 
 
@@ -82,14 +88,6 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-    var i;
-    for (i = 0; i < 3; i++) {
-      if (this.items1[i].checked) {
-        pmc = 'pay-money-content1'
-      } else {
-        pmc = 'pay-money-content'
-      }
-    }
 
   },
 
