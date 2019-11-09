@@ -44,6 +44,12 @@ Page({
       complete: function (res) { },
     })
   },
+  tomember: function () { //我的资产
+    wx.navigateTo({
+      url: 'member/member',
+
+    })
+  },
   toStoreEnter: function () { //商家入驻
     wx.navigateTo({
       url: 'Store/Store',

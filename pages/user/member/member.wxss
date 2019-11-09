@@ -1,0 +1,130 @@
+/* pages/user/member/member.wxss */
+page{
+background-color: #f4f8fb;
+}
+.member-top{
+  margin-top: 20rpx;
+  background-color: #ffffff;
+}
+.member-top-title{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  padding: 10rpx;
+}
+.member-top-title image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.openService{
+  font-size: 25rpx;
+  color: #5d5d5d;
+}
+.openService-fn{
+   font-size: 30rpx;
+}
+.pay-money{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20rpx;
+}
+.pay-money-content{
+ border-radius: 20rpx;
+  width: 200rpx;
+  height: 200rpx;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rpx;
+}
+.pay-money-content1{
+ border-radius: 20rpx;
+  width: 200rpx;
+  height: 200rpx;
+  background-color: #434343;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rpx;
+}
+.content-t{
+  font-size: 35rpx;
+  color: #393939;
+  padding: 10rpx;
+}
+.content-t1{
+  font-size: 35rpx;
+  font-weight: bold;
+  background: linear-gradient(to right, #fce49e, #e2b66b);
+-webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  padding: 10rpx;
+}
+.content-c{
+  font-size: 32rpx;
+  color: #969696;
+  padding: 10rpx;
+}
+.content-c1{
+  font-size: 32rpx;
+   background: linear-gradient(to right, #fce49e, #e2b66b);
+-webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  padding: 10rpx;
+}
+.content-b{
+  background-color: #e5e5e5;
+  padding: 10rpx 20rpx 10rpx 20rpx;
+  border-radius: 50rpx;
+
+  color: #8c8c8c;
+  margin: 10rpx;
+  font-size: 21rpx;
+}
+.content-b1{
+    background: linear-gradient(to right, #fce49e, #e2b66b);
+  padding: 10rpx 20rpx 10rpx 20rpx;
+  border-radius: 50rpx;
+
+  color: #222023;
+  margin: 10rpx;
+  font-size: 21rpx;
+}
+.top-radio{
+  position: absolute;
+  margin-left: 80rpx;
+  margin-top:-70rpx;
+
+  transform:scale(0.9);
+}
+.radio-group{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+}
+.radio {
+
+  transform:scale(0.7);
+transform-origin:10%;
+  display: flex;
+}
+.pay{
+  margin-top: 20rpx;
+  background-color: #ffffff;
+  padding: 20rpx;
+}
+.pay-way{
+  padding-bottom: 10rpx;
+  font-size: 25rpx;
+  padding-left: 20rpx;
+  color: #656565;
+}

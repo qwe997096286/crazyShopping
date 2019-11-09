@@ -1,0 +1,39 @@
+<!--pages/user/member/member.wxml-->
+<view class='member-top'>
+  <view class='member-top-title'>
+    <view class='openService'>开通服务</view>
+    <image src='../../../images/vip1.png'></image>
+    <view class='openService-fn'>疯鸟shopping超级会员</view>
+  </view>
+
+  <view class='pay-money'>
+<radio-group class='radio-group' bindchange="radioChange">
+    <label wx:for="{{items1}}">
+    <view class='{{item.checked?pmc:pmc1}}' bindtap='chageClass'>
+      <radio  class='top-radio' value="{{item.value}}" checked="{{item.checked}}" />
+        <view class='content-t1'>{{item.name}}</view>
+        <view class='content-c1'>￥{{item.prise}}</view>
+        <view class='content-b1'>每次续费￥{{item.priseadd}}</view>
+    </view>
+      
+    </label>
+</radio-group>
+
+    <!-- <view class='pay-money-content'>
+        <view class='content-t'>半年卡</view>
+        <view class='content-c'>￥166</view>
+        <view class='content-b'>每次续费￥166</view>
+    </view> -->
+   
+  </view>
+<view style='margin-left:30rpx;padding:20rpx;font-size:30rpx;'>开启会员自动续费，随时可以取消</view>
+
+</view>
+<view class='pay'>
+<view class='pay-way'>支付方式</view>
+<radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items}}">
+        <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+    </label>
+</radio-group>
+</view>

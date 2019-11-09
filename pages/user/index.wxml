@@ -25,7 +25,7 @@
       <view class='myMoney-text'>商家入驻</view>
       <view class='iconfont icon-gengduo'></view>
     </view>
-    <view class='myMoney' bindtap='toMyMoney'>
+    <view class='myMoney' bindtap='tomember'>
       <view class='iconfont icon-huiyuan'></view>
       <view class='myMoney-text'>会员注册</view>
       <view class='iconfont  icon-gengduo'></view>
