@@ -37,3 +37,4 @@
     </label>
 </radio-group>
 </view>
+<view class='pay-mid' bindtap='changevip'>立即支付</view>
