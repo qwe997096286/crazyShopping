@@ -9,7 +9,7 @@
       </view>
     </button>
   </form>
-  <view class='wantList' wx:for="{{goodsList}}" data-id='{{item.id}}' bindtap='toDetail' wx:key="key">
+  <view class='wantList' wx:for="{{goodsList}}" data-id='{{item.id}}' data-gid='{{item.gid}}'bindtap='toDetail' wx:key="key">
     
     <view class='detail-head'>
       <image class='detail-head-img' mode='aspectFill' src='{{item.simage}}'></image>
@@ -34,8 +34,8 @@
     </view>
     <view class='goodsTitle'>{{item.goodsName}}</view>
     <view class='btn'>
-    <button class='btn1'>取消</button>
-        <button class='btn1'>付款</button>
+    <button class='btn1' catchtap="cancel" data-id="{{item.id}}" data-index="{{index}}">取消</button>
+        <button class='btn1'catchtap="pay" data-gid="{{item.gid}}">付款</button>
         </view>
           
     <!-- {{item.goodsTitle}} -->

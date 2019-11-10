@@ -33,7 +33,10 @@ Page({
     sname:'',
     platUserInfoMap:{},
     orderId:'',
-    
+
+    number1: 1,
+    disabled1: false,
+    disabled2: false
   },
   onLoad: function (options) {
     var userId = wx.getStorageSync('userinfo').accessToken;
@@ -198,8 +201,41 @@ getshopname:function(){
   //   })
   // },
   //支付
+
+  prevNum1() {
+    this.setData({
+      number1: this.data.number1 >= 99 ? 99 : this.data.number1 + 1,
+      disabled1: this.data.number1 !== 1 ? false : true,
+      disabled2: this.data.number1 !== 99 ? false : true
+    });
+  },
+  nextNum1() {
+    this.setData({
+      number1: this.data.number1 <= 1 ? 1 : this.data.number1 - 1,
+      disabled1: this.data.number1 !== 1 ? false : true,
+      disabled2: this.data.number1 !== 99 ? false : true
+    });
+  },
+  setnum:function(e){
+    this.setData({
+      number1:e.detail.value
+    })
+  },
    payBtn: function (e) {
-     
+     var num=this.data.number1;
+     if(!(num>0&&num<100)){
+       wx.showToast({
+         title: '数量必须小于100大于0',
+         icon: 'none',
+         image: '',
+         duration: 500,
+         mask: true,
+         success: function(res) {},
+         fail: function(res) {},
+         complete: function(res) {},
+       })
+      return ;
+     }
      var that = this;
      that.setData({
        canPay: 2
@@ -220,7 +256,7 @@ getshopname:function(){
              shopName: that.data.sname,
              fee: parseFloat(that.data.price),
              platUserInfoMap: that.data.platUserInfoMap,
-             num: 1,
+             num: num,
              state: 0,
              sum: that.data.price,
              consignee: that.data.addressName,

@@ -20,7 +20,15 @@
           </view>
           <view class="arow">
             <view class="goods-label">{{jieshao}}</view>
-            <view class="goods-num">x 1</view>
+            <view class="goods-num">
+               <view class="tui-gallery-list">
+                  <view class="tui-number-group">
+                    <button class="tui-number-cell" bindtap="nextNum1" disabled='{{disabled1}}'>-</button>
+                    <input class="tui-number-cell" type="number" value='{{number1}}' bindinput="setnum"></input>
+                    <button class="tui-number-cell" bindtap="prevNum1" disabled='{{disabled2}}'>+</button>
+                  </view>
+                </view>
+            </view>
           </view>
         </view>
       </view>

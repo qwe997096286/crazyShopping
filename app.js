@@ -64,7 +64,6 @@ App({
                     },
                     success(res) {
                       if (res.data.code == 200) {
-                        console.log(res.data)
                         wx.setStorageSync("userinfo", res.data)
                         wx.setStorageSync("accessToken", res.accessToken)
                         wx.setStorageSync("isBinding", res.data.isBinding)

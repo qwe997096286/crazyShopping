@@ -127,7 +127,27 @@ form {
   font-size: 26rpx;
   color: #999;
 }
-
+.tui-number-group{
+ display: table;
+ table-layout: fixed;
+ width: 130rpx;
+ text-align: center;
+ border-radius: 6px;
+ border: 1px solid #bbb;
+ overflow: hidden;
+}
+.tui-number-cell{
+ display: table-cell;
+ padding: 0;
+ margin: 0;
+ line-height: 0.7;
+ border-radius: 0;
+}
+button::after{
+ border-bottom: none;
+ border-top: none;
+ border-radius: 0;
+}
 .peisong-way {
   width: 100%;
   background-color: #fff;
