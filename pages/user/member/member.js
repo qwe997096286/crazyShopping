@@ -64,6 +64,7 @@ Page({
             console.log(res.data);
             wx.showToast({
 
+
               title: '充值成功！',
               success: function () {
                 setTimeout(function () {
@@ -72,7 +73,16 @@ Page({
               }
               
             })
-            
+
+           
+            // var pages=getCurrentPages()
+            // var prevPage = pages[pages.length - 2];
+            // console.log(prevPage)
+            // var info = wx.getStorageSync('userinfo');
+            // info.vip=true;
+            // prevPage.setData({
+            //   userInfo:info
+
           }
       })
 
@@ -106,7 +116,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    this.onLoad();
   },
 
   /**
