@@ -63,19 +63,18 @@ Page({
           success(res) {
             console.log(res.data);
             wx.showToast({
-              title: '充值成功',
-              image: '',
-              duration: 2000,
-              mask: true,
-              success: function (res) { 
-                setTimeout(function(){
+
+
+              title: '充值成功！',
+              success: function () {
+                setTimeout(function () {
                   that.backIndex();
-                },2000)
-              },
-              fail: function (res) { },
-              complete: function (res) {},
+                }, 2000);
+              }
+              
             })
-            that.onLoad()
+
+           
             // var pages=getCurrentPages()
             // var prevPage = pages[pages.length - 2];
             // console.log(prevPage)
@@ -84,7 +83,7 @@ Page({
             wx.setStorageSync("userinfo", info)
             // prevPage.setData({
             //   userInfo:info
-            // })
+
           }
       })
 
@@ -132,7 +131,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-
+    this.onLoad();
   },
 
   /**
