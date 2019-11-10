@@ -79,8 +79,9 @@ Page({
             // var pages=getCurrentPages()
             // var prevPage = pages[pages.length - 2];
             // console.log(prevPage)
-            // var info = wx.getStorageSync('userinfo');
-            // info.vip=true;
+            var info = wx.getStorageSync('userinfo');
+            info.vip=true;
+            wx.setStorageSync("userinfo", info)
             // prevPage.setData({
             //   userInfo:info
             // })
@@ -117,7 +118,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-    this.onLoad();
+    // this.onLoad();
   },
 
   /**

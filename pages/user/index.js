@@ -10,7 +10,7 @@ Page({
     userInfo: null,
     show: false,
     number: null,
-
+    vip:null,
   },
 
   /**
