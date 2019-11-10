@@ -3,8 +3,8 @@
     <view wx:if="{{userInfo}}">
       <view class='topColor'></view>
       <image class='userinfo-avator' mode='aspectFill' src='{{userInfo.headimgurl}}'></image>
-      <view class='userInfo.vip?userinfo-name1:userinfo-name'>{{userInfo.userName}}</view>
-      <view class='userInfo.vip?userinfo-phone1:userinfo-phone'>{{number==null?userInfo.phone:number}}</view>
+      <view class="{{userInfo.vip==true?'userinfo-name1':'userinfo-name'}}">{{userInfo.userName}}</view>
+      <view class="{{userInfo.vip==true?'userinfo-phone1':'userinfo-phone'}}">{{number==null?userInfo.phone:number}}</view>
     </view>
   </view>
   <block wx:if="{{show}}">

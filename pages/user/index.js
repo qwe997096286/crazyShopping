@@ -109,7 +109,7 @@ Page({
         wx.showModal({
           title: '绑定成功',
           showCancel: false,
-          content: '欢迎进入在启农',
+          content: '欢迎进入在疯鸟',
           success: function (res) {
             that.setData({
               show: false
