@@ -2,7 +2,6 @@
   "pages": [
     "pages/index/index",
     "pages/user/member/member",
-    
     "pages/secondHandMyWant/secondHandMyWant",
     "pages/logs/logs",
     "pages/secondHand/secondHandSearch",

@@ -8,13 +8,13 @@ Page({
     items: [{
         name: 'wx',
         value: '微信',
-        checked:'true'
+        checked: 'true'
       },
       {
         name: 'zfb',
         value: '支付宝',
         checked: 'false'
-      },
+      }
     ],
     items1: [{
         name: '月卡',
@@ -44,11 +44,37 @@ Page({
   chageClass: function(e) {
     console.log(e);
   },
-  changevip:function(e){
-    wx.showToast({
 
-      title: '充值成功！',
 
+
+  changevip: function(e) {
+    var openid = wx.getStorageSync('userinfo').accessToken
+  var that=this;
+    wx.request({
+          url: 'https://www.sxscott.com/agriculture/agro/upVIP',
+          method: 'post',
+          data: {
+            openId: openid,
+
+          },
+          header: {
+            'content-type': 'application/json' // 默认值
+          },
+          success(res) {
+            console.log(res.data);
+            wx.showToast({
+
+              title: '充值成功！',
+            })
+            that.backIndex();
+          }
+      })
+
+  },
+  backIndex:function(){
+
+    wx.navigateBack({
+      url: '../index',
     })
   },
   radioChange: function(e) {
@@ -61,9 +87,9 @@ Page({
       change[i].checked = false;
     }
 
-      change[index - 1].checked = true;
+    change[index - 1].checked = true;
 
-      
+
 
 
     this.setData({
@@ -95,7 +121,12 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function() {
+    console.log(123465);
+    wx.navigateTo({
 
+      url: "../index"
+
+    });
   },
 
   /**

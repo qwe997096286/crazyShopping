@@ -167,12 +167,31 @@ page{
   top:200rpx;
   text-align: center;
 }
+.userinfo-name1{
+  /* background-color: gray; */
+  position: absolute;
+  width: 100%;
+  top:200rpx;
+  text-align: center;
+   /* color: rgba(255, 73, 1, 0.993); */
+    background: linear-gradient(to right, #fa1209, #da5050);
+-webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 .userinfo-phone{
   position: absolute;
   width: 100%;
   top: 300rpx;
   text-align: center;
   /* color: rgba(141, 136, 141, 0.822) */
+}
+.userinfo-phone1{
+  position: absolute;
+  width: 100%;
+  top: 300rpx;
+  text-align: center;
+  color: rgba(255, 73, 1, 0.993);
 }
 .my-list{
   width: 100%;
