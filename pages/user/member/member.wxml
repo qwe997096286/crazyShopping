@@ -31,7 +31,7 @@
 </view>
 <view class='pay'>
 <view class='pay-way'>支付方式</view>
-<radio-group class="radio-group" bindchange="radioChange">
+<radio-group class="radio-group">
     <label class="radio" wx:for="{{items}}">
         <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
     </label>
