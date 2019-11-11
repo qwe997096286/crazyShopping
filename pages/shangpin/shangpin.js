@@ -74,6 +74,57 @@ Page({
   //     }
   //   })
   // },
+   cart: function (e) {
+     var sid = e.currentTarget.dataset.id;
+     var that=this;
+    wx.request({
+      url: that.data.url +'/cart/insert', // 仅为示例，并非真实的接口地址
+      method: 'post',
+      data: {
+        openId: wx.getStorageSync("userinfo").accessToken,
+        goodsId:sid,
+        num:1
+
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success(res) {
+        console.log(res);
+        wx.showToast({
+          title: '成功加入购物车',
+        })
+      }
+    })
+},
+  // qianggou:function(){
+  //   let that = this;
+  //   console.log(that.data.spid)
+  //   wx.request({
+  //     url: that.data.url +'/agro/createOrder', // 仅为示例，并非真实的接口地址
+  //     type: 'POST',
+  //     data: {
+  //       goodsId: that.data.spid,
+
+  //     },
+  //     header: {
+  //       'content-type': 'application/json' // 默认值
+  //     },
+  //     success(res) {
+  //       console.log(res.data.itemGoods);
+  //       var returnArr = that.data.spinfo;
+  //       for (var i = 0; i < res.data.itemGoods.length; i++) {
+  //         returnArr.push(res.data.itemGoods[i]);
+
+  //       }
+  //       console.log(returnArr)
+  //       that.setData({
+  //         spinfo: returnArr
+  //       })
+  //       console.log(that.data.spinfo);
+  //     }
+  //   })
+  // },
   /**
    * 生命周期函数--监听页面加载
    */

@@ -147,6 +147,17 @@ flex-direction: column;
 .fuhao{
   font-size: 32rpx
 }
+.addCart{
+  width: 25%;
+  height: 80%;
+  padding-left:10rpx;
+  font-size: 26rpx;
+  background: rgb(144, 231, 3);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .btn{
   width: 25%;
   height: 80%;

@@ -91,10 +91,11 @@ Page({
       })
     } else if (!(/^1[34578]\d{9}$/.test(phone))) { //判断手机号码是否正确
       wx.showToast({
-        title: '请输入正确的手机',
+        title: '请输入正确的手机号',
         duration: 2000
       })
-    } else {
+    } else 
+    {
       let infoOpt = {
         url: '/agro/binding',
         type: 'POST',
@@ -109,12 +110,19 @@ Page({
         wx.showModal({
           title: '绑定成功',
           showCancel: false,
-          content: '欢迎进入在启农',
+          content: '欢迎进入疯鸟shopping',
           success: function (res) {
             that.setData({
               show: false
             })
             that.onLoad();
+            var info=wx.getStorageSync("userinfo")
+            info.isBinding=1
+            // console.log(info+"111212")
+            // that.setData({
+            //   userInfo:info
+            // })
+            wx.setStorageSync("userinfo", info)
           }
         })
       }
@@ -136,7 +144,7 @@ Page({
       userInfo: wx.getStorageSync('userinfo')
     })
     console.log(that.data.userInfo);
-    if (wx.getStorageSync("isBinding") === '2') { //未绑定弹出框
+    if (wx.getStorageSync("userinfo").isBinding === '2') { //未绑定弹出框
       that.setData({
         show: true
       })

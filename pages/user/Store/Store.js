@@ -7,21 +7,21 @@ Page({
   data: {
     url: 'https://www.sxscott.com/agriculture',
     array: [{
-        value: '蔬果',
+      value: '新品',
         check: 'true'
       }, {
-        value: '农庄'
+        value: '服饰'
       }, {
-        value: '畜牧'
+        value: '家居'
       },
       {
-        value: '旅游'
+        value: '果蔬'
       }, {
-        value: '学农'
+        value: '数码'
       }, {
-        value: '聚点'
+        value: '运动'
       }, {
-        value: '散户'
+        value: '生鲜'
       }, {
         value: '其他'
       }

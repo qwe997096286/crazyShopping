@@ -1,3 +1,5 @@
+<wxs module="filters" src="../../utils/filters.wxs"></wxs>
+
 <view id='order'>
   <view class='tabBar stickyClass'>
     <view class="tab-item {{currentTab == 0 ? 'active' : ''}}" bindtap='clickMenu' data-current="0" data-status='' >全部</view>
@@ -23,7 +25,7 @@
       <view class='orderNum'>x{{item.num}}</view>
     </view>
     <view class='orderTotalPrice'>
-      <view class='orderTotalPrice-text'>合计：￥{{item.sum}}</view>
+      <view class='orderTotalPrice-text'>合计：￥{{filters.toFix(item.sum*item.num)}}</view>
     </view>
   <view class='orderBtn'>
     <view class='order-all'>

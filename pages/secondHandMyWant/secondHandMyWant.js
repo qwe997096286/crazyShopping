@@ -11,8 +11,12 @@ Page({
   },
   onLoad: function(options) {
     this.getCollectionList();
+    this.setData({
+      pageNo:1
+    })
   },
   onShow: function () {
+    this.onLoad();
     // if (wx.getStorageSync('userinfo').isbound == 1) {
     //   wx.showModal({
     //     title: '提示',
@@ -32,7 +36,6 @@ Page({
     //   })
     //   this.getCollectionList();
     // }
-    getCollectionList();
    },
   //单击导航栏
   clickMenu: function(e) {
@@ -105,7 +108,7 @@ Page({
     let that=this;
     wx.request({
       url: url.host + '/cart/delete', // 仅为示例，并非真实的接口地址
-      method: 'PUT',
+      method: 'DELETE',
       data: {
         openId: wx.getStorageSync("userinfo").accessToken,
         id:id
@@ -114,10 +117,16 @@ Page({
         'content-type': 'application/json' // 默认值
       },
       success(res) {
+        console.log(res)
         var arr=that.data.goodsList;
         arr.splice(index,1)
         that.setData({
           goodsList: arr
+        })
+        wx.showToast({
+          title: '移出成功',
+          icon:'none',
+          duration: 300
         })
       }
     })

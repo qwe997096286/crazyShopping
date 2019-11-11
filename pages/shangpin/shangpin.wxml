@@ -25,6 +25,7 @@
         <view class='qian'>{{item.price}}</view>
       </view>
       <view class='check'>下单前请检查地址与联系方式</view>
+      <view class="addCart" bindtap='cart' data-id='{{item.id}}'>加入购物车</view>
       <view class='btn' bindtap='buy'>
         <view>立即抢购</view>
       </view>

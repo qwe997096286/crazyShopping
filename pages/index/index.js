@@ -98,7 +98,7 @@ Page({
       },
       success(res) {
         console.log(res.data)
-        if (res.data == 1 && false) {
+        if (res.data == 1 ) {
         that.setData({
           isshow:false,
           isshow2:true,
@@ -257,32 +257,32 @@ dianjia:function(event){
 
 
           //  returnArr[i].distance=returnArr[i].distance.toFixed(1);
-          switch (returnArr[i].stype) {
-            case 1:
-              returnArr[i].stype = '水果商铺';
-              break;
-            case 2:
-              returnArr[i].stype = '蔬菜商铺';
-              break;
-            case 3:
-              returnArr[i].stype = '畜牧商铺';
-              break;
-            case 4:
-              returnArr[i].stype = '旅游商铺';
-              break;
-            case 5:
-              returnArr[i].stype = '学农商铺';
-              break;
-            case 6:
-              returnArr[i].stype = '聚点商铺';
-              break;
-            case 7:
-              returnArr[i].stype = '散户商铺';
-              break;
-            case 8:
-              returnArr[i].stype = '其他商铺';
-              break;
-          }
+          // switch (returnArr[i].stype) {
+          //   case 1:
+          //     returnArr[i].stype = '水果商铺';
+          //     break;
+          //   case 2:
+          //     returnArr[i].stype = '蔬菜商铺';
+          //     break;
+          //   case 3:
+          //     returnArr[i].stype = '畜牧商铺';
+          //     break;
+          //   case 4:
+          //     returnArr[i].stype = '旅游商铺';
+          //     break;
+          //   case 5:
+          //     returnArr[i].stype = '学农商铺';
+          //     break;
+          //   case 6:
+          //     returnArr[i].stype = '聚点商铺';
+          //     break;
+          //   case 7:
+          //     returnArr[i].stype = '散户商铺';
+          //     break;
+          //   case 8:
+          //     returnArr[i].stype = '其他商铺';
+          //     break;
+          // }
 
         }
 
@@ -346,32 +346,32 @@ dianjia:function(event){
 
 
           //  returnArr[i].distance=returnArr[i].distance.toFixed(1);
-          switch (returnArr[i].stype) {
-            case 1:
-              returnArr[i].stype = '水果商铺';
-              break;
-            case 2:
-              returnArr[i].stype = '蔬菜商铺';
-              break;
-            case 3:
-              returnArr[i].stype = '畜牧商铺';
-              break;
-            case 4:
-              returnArr[i].stype = '旅游商铺';
-              break;
-            case 5:
-              returnArr[i].stype = '学农商铺';
-              break;
-            case 6:
-              returnArr[i].stype = '聚点商铺';
-              break;
-            case 7:
-              returnArr[i].stype = '散户商铺';
-              break;
-            case 8:
-              returnArr[i].stype = '其他商铺';
-              break;
-          }
+          // switch (returnArr[i].stype) {
+          //   case 1:
+          //     returnArr[i].stype = '水果商铺';
+          //     break;
+          //   case 2:
+          //     returnArr[i].stype = '蔬菜商铺';
+          //     break;
+          //   case 3:
+          //     returnArr[i].stype = '畜牧商铺';
+          //     break;
+          //   case 4:
+          //     returnArr[i].stype = '旅游商铺';
+          //     break;
+          //   case 5:
+          //     returnArr[i].stype = '学农商铺';
+          //     break;
+          //   case 6:
+          //     returnArr[i].stype = '聚点商铺';
+          //     break;
+          //   case 7:
+          //     returnArr[i].stype = '散户商铺';
+          //     break;
+          //   case 8:
+          //     returnArr[i].stype = '其他商铺';
+          //     break;
+          // }
 
         }
 
@@ -437,32 +437,32 @@ dianjia:function(event){
           // console.log();
 
           //  returnArr[i].distance=returnArr[i].distance.toFixed(1);
-          switch (returnArr[i].stype) {
-            case 1:
-              returnArr[i].stype = '水果商铺';
-              break;
-            case 2:
-              returnArr[i].stype = '蔬菜商铺';
-              break;
-            case 3:
-              returnArr[i].stype = '畜牧商铺';
-              break;
-            case 4:
-              returnArr[i].stype = '旅游商铺';
-              break;
-            case 5:
-              returnArr[i].stype = '学农商铺';
-              break;
-            case 6:
-              returnArr[i].stype = '聚点商铺';
-              break;
-            case 7:
-              returnArr[i].stype = '散户商铺';
-              break;
-            case 8:
-              returnArr[i].stype = '其他商铺';
-              break;
-          }
+          // switch (returnArr[i].stype) {
+          //   case 1:
+          //     returnArr[i].stype = '水果商铺';
+          //     break;
+          //   case 2:
+          //     returnArr[i].stype = '蔬菜商铺';
+          //     break;
+          //   case 3:
+          //     returnArr[i].stype = '畜牧商铺';
+          //     break;
+          //   case 4:
+          //     returnArr[i].stype = '旅游商铺';
+          //     break;
+          //   case 5:
+          //     returnArr[i].stype = '学农商铺';
+          //     break;
+          //   case 6:
+          //     returnArr[i].stype = '聚点商铺';
+          //     break;
+          //   case 7:
+          //     returnArr[i].stype = '散户商铺';
+          //     break;
+          //   case 8:
+          //     returnArr[i].stype = '其他商铺';
+          //     break;
+          // }
         
         }
   
@@ -531,32 +531,32 @@ dianjia:function(event){
           returnArr.push(res.data.itemShop[i]);
           console.log(returnArr[i].stype);
           //  returnArr[i].distance=returnArr[i].distance.toFixed(1);
-          switch (returnArr[i].stype) {
-            case 1:
-              returnArr[i].stype = '水果商铺';
-              break;
-            case 2:
-              returnArr[i].stype = '蔬菜商铺';
-              break;
-            case 3:
-              returnArr[i].stype = '畜牧商铺';
-              break;
-            case 4:
-              returnArr[i].stype = '旅游商铺';
-              break;
-            case 5:
-              returnArr[i].stype = '学农商铺';
-              break;
-            case 6:
-              returnArr[i].stype = '聚点商铺';
-              break;
-            case 7:
-              returnArr[i].stype = '散户商铺';
-              break;
-            case 8:
-              returnArr[i].stype = '其他商铺';
-              break;
-          }
+          // switch (returnArr[i].stype) {
+          //   case 1:
+          //     returnArr[i].stype = '水果商铺';
+          //     break;
+          //   case 2:
+          //     returnArr[i].stype = '蔬菜商铺';
+          //     break;
+          //   case 3:
+          //     returnArr[i].stype = '畜牧商铺';
+          //     break;
+          //   case 4:
+          //     returnArr[i].stype = '旅游商铺';
+          //     break;
+          //   case 5:
+          //     returnArr[i].stype = '学农商铺';
+          //     break;
+          //   case 6:
+          //     returnArr[i].stype = '聚点商铺';
+          //     break;
+          //   case 7:
+          //     returnArr[i].stype = '散户商铺';
+          //     break;
+          //   case 8:
+          //     returnArr[i].stype = '其他商铺';
+          //     break;
+          // }
         }
         that.setData({
           fujinlist: returnArr,
