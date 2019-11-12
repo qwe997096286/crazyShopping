@@ -1,5 +1,5 @@
 <view class='index-page'>
-  <view class='dianpu-info' wx:for="{{sjinfo}}" wx:key="*this" style='background:url({{item.simage}});opacity:{{1}};z-index:-1;'>
+  <view class='dianpu-info' wx:for="{{sjinfo}}" wx:key="*this" style='background:url({{item.simage}});opacity:{{1}};z-index:-2;'>
     <view class='info-left'>
       <image src='{{item.simage}}'></image>
     </view>
@@ -12,7 +12,6 @@
           <view class='juli-font line'>|</view>
           <view class='jisu iconfont icon-jisutuikuan'></view>
           <view class='juli-font'>客户满意度高达100%</view>
-          <view class="mask"></view>
         </view>
         <view class='gonggao'>
           <view class='guanggao'>
@@ -34,6 +33,8 @@
         </view>
       </view>
     </view>
+    
+    <view class="mask"></view>
   </view>
   <view class='conten'>
     <view class='fenlei {{gray}}'>
