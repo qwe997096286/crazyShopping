@@ -1,6 +1,8 @@
 <view class='index-page'>
   <view class='dianpu-info' wx:for="{{sjinfo}}" wx:key="*this" style='background:url({{item.simage}});opacity:{{1}};z-index:-1;'>
-    <view class='info-left'><image src='{{item.simage}}'></image></view>
+    <view class='info-left'>
+      <image src='{{item.simage}}'></image>
+    </view>
     <view class='info-right'>
       <view class='right-content'>
         <view class='juli'>
@@ -12,49 +14,61 @@
           <view class='juli-font'>客户满意度高达100%</view>
           <view class="mask"></view>
         </view>
-      <view class='gonggao'><view class='guanggao'><view class='zi'>公告:</view><swiper class="swiper_lab" vertical="true" autoplay="true" circular="true" interval="3000">
- 
-<block wx:for="{{list}}">
- 
-<swiper-item>
- 
-<view class="swiper_item">{{item.name}}</view>
- 
-</swiper-item>
- 
-</block>
- 
-</swiper></view> </view>
+        <view class='gonggao'>
+          <view class='guanggao'>
+            <view class='zi'>公告:</view>
+            <swiper class="swiper_lab" vertical="true" autoplay="true" circular="true" interval="3000">
+
+              <block wx:for="{{list}}">
+
+                <swiper-item>
+
+                  <view class="swiper_item">{{item.name}}</view>
+
+                </swiper-item>
+
+              </block>
+
+            </swiper>
+          </view>
+        </view>
       </view>
     </view>
   </view>
   <view class='conten'>
-  <view class='fenlei {{gray}}'>
-  <view class="items {{current_item === index?'selected':''}}"  wx:for="{{fenlei}}"  data-key='{{index}}' data-id='{{item.id}}' catchtap='white'><text>{{item.name}}</text></view>
-   <!-- <view class='fen1'><text>夏日冰爽搭配</text></view>
+    <view class='fenlei {{gray}}'>
+      <view class="items {{current_item === index?'selected':''}}" wx:for="{{fenlei}}" data-key='{{index}}' data-id='{{item.id}}' catchtap='white'>
+        <text>{{item.name}}</text>
+      </view>
+      <!-- <view class='fen1'><text>夏日冰爽搭配</text></view>
     <view class='fen1'><text>本店搞活动</text></view>
      <view class='fen1'><text>特色双拼套餐饭撒大苏打的是</text></view> -->
-  </view>
-  <view class='caidan'>
-  <view class='title'>热销商品</view>
-  <view class='content'>
-  
-  <view class='cont' bindtap='xiangqing' id="{{item.id}}" wx:for="{{spinfo}}" wx:key="*this" >
-  <view class='cont-left'><image src='{{item.gimage}}'></image></view>
-   <view class='cont-right'>
-   <view class='r-title'>{{item.name}}</view>
-        <view class='jieshao'>小介绍：{{item.content}}
-   </view>
-   <view class='r-info'>
- 
-   <view class='yueshou'>月售{{item.sellOut}}
-   </view>
-   </view>
-   <view class='r-last'><view class='r-price'>￥{{item.price}}</view> <view class='xiangqing iconfont icon-jinru'></view></view>
-   </view>
-  </view>
-  
-  </view>
-  </view>
+    </view>
+    <view class='caidan'>
+      <view class='title'>热销商品</view>
+      <view class='content'>
+
+        <view class='cont' bindtap='xiangqing' id="{{item.id}}" wx:for="{{spinfo}}" wx:key="*this">
+          <view class='cont-left'>
+            <image src='{{item.gimage}}'></image>
+          </view>
+          <view class='cont-right'>
+            <view class='r-title'>{{item.name}}</view>
+            <view class='jieshao'>小介绍：{{item.content}}
+            </view>
+            <view class='r-info'>
+
+              <view class='yueshou'>月售{{item.sellOut}}
+              </view>
+            </view>
+            <view class='r-last'>
+              <view class='r-price'>￥{{item.price}}</view>
+              <view class='xiangqing iconfont icon-jinru'></view>
+            </view>
+          </view>
+        </view>
+
+      </view>
+    </view>
   </view>
 </view>
