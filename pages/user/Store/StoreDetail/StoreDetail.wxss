@@ -71,7 +71,7 @@ width: 45%;
   margin-top: 40rpx;
   width: 90%;
   margin-left: 5%;
-  background-color: #67CB33;
+  background-color: #e9bb04;
   color: white;
   height: 80rpx;
   text-align: center;
@@ -80,7 +80,7 @@ width: 45%;
 .Mess{
   margin-top: 10rpx;
   width: 100%;
-  background-color: #67CB33;
+  background-color: #e9bb04;
   color: white;
   height: 80rpx;
   text-align: center;

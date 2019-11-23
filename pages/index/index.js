@@ -666,11 +666,11 @@ dianjia:function(event){
 
   },
   sp:function(){
-    // wx.showToast({
-    //   title: '功能施工中，敬请期待！',
-    //   icon: 'none',
-    //   duration: 2000
-    // })
+    wx.showToast({
+      title: '功能施工中，敬请期待！',
+      icon: 'none',
+      duration: 2000
+    })
   },
   tolocation: function () {
     var that = this;

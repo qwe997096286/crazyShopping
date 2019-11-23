@@ -140,12 +140,12 @@
           <!-- <view class="more"><view>更多商家</view></view> -->
         </view>
         <view class='nongchang'>
-          <view class='nongchang_hot' bindtap='sp'>
+          <view class='nongchang_hot' bindtap='sp' data-key='新品'>
             <view class='nonchang_hot_title'>大牌直降</view>
             <view class='nonchang_hot_content'>正品大牌直降千元，万元补贴</view>
             <image mode='widthFix' src='http://img3m6.ddimg.cn/60/6/61881396-1_k_2.jpg'></image>
           </view>
-          <view class="nonchang_new">
+          <view class="nonchang_new" data-key='蔬果'>
             <view class='nongchang_new-up' bindtap='sp'>
               <view class='nongchang_new_up_left'>
                 <view class='nongchang_new_up_title'>新鲜果蔬</view>
@@ -154,13 +154,14 @@
 
               <image src='/images/nongnew.png'></image>
             </view>
-            <view class='tttm' bindtap='sp'>
+            <view class='tttm' bindtap='sp'data-key='服饰'>
               <view class='nongchang_new_up_left'>
                 <view class='tttm-titile'>天天特卖</view>
                 <view class='tttm-content'>热销过万匡威1970s正品帆布鞋经典款</view>
               </view>
 
-              <image mode='widthFix' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572857230859&di=8a9a0174d461ae7115c1135aea547aae&imgtype=0&src=http%3A%2F%2Fdingyue.nosdn.127.net%2FVuDgM%3D1vwu4avepMYjFjhA6M7wfg3qVuI5puFzc5Q1GSA1523675433441compressflag.jpg'></image>
+              <image mode='widthFix' src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1572857230859&di=8a9a0174d461ae7115c1135aea547aae&imgtype=0&src=http%3A%2F%2Fdingyue.nosdn.127.net%2FVuDgM%3D1vwu4avepMYjFjhA6M7wfg3qVuI5puFzc5Q1GSA1523675433441compressflag.jpg'
+               data-key='服饰'></image>
             </view>
 
 
