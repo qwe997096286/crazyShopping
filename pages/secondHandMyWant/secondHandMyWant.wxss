@@ -90,6 +90,7 @@
   font-size: 25rpx;
   /* margin-top: 20rpx; */
   overflow: hidden;
+  max-width: 40%;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-box-orient: vertical;
